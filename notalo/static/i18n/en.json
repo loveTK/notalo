@@ -124,6 +124,7 @@
  "footer.privacy": "Uploaded files and results are deleted right after processing.",
  "footer.privacy_link": "Privacy Policy",
  "footer.terms_link": "Terms of Service",
+ "footer.about_link": "About & Contact",
  "tool.status_uploading": "Uploading…",
  "tool.status_one_file": "Please choose only one file at a time.",
  "processing.title": "Converting your sheet music…",

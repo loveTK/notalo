@@ -298,12 +298,13 @@ def page_midi():
     return HTMLResponse(_variant("/sheet-music-to-midi"))
 
 
-GUIDES = {"/how-to-read-sheet-music": "guide-read.html", "/treble-clef-notes": "guide-treble.html", "/bass-clef-notes": "guide-bass.html"}
+GUIDES = {"/how-to-read-sheet-music": "guide-read.html", "/treble-clef-notes": "guide-treble.html", "/bass-clef-notes": "guide-bass.html", "/about": "about.html"}
 
 
 @app.get("/how-to-read-sheet-music")
 @app.get("/treble-clef-notes")
 @app.get("/bass-clef-notes")
+@app.get("/about")
 def guide_page(request: Request):
     return FileResponse(os.path.join(STATIC_DIR, GUIDES[request.url.path]))
 
@@ -324,7 +325,7 @@ def _song_page(slug):
            "author": {"@type": "Organization", "name": "Notalo"}, "publisher": {"@type": "Organization", "name": "Notalo", "url": "https://notalo.xyz/"}}]
     related = " · ".join(f'<a href="/letter-notes/{k}">{v["title"]}</a>' for k, v in SONGS.items() if k != slug)
     rep = {"TITLE": m["title"], "SLUG": slug, "URL": url, "KEY": m["key"], "TIME": m["time"], "BPM": str(m["bpm"]), "COMPOSER": m["composer"], "YEAR": year,
-           "INTRO": m["intro"], "W": str(d["w"]), "H": str(d["h"]), "LD": json.dumps(ld, ensure_ascii=False).replace("</", "<\\/"),
+           "INTRO": m["intro"], "ABOUT": m["about"], "PLAY": m["play"], "W": str(d["w"]), "H": str(d["h"]), "LD": json.dumps(ld, ensure_ascii=False).replace("</", "<\\/"),
            "BARS": "\n  ".join(f"<tr><td>{b['n']}</td><td>{b['chord']}</td><td>{b['rh']}</td></tr>" for b in d["bars"]),
            "TIPS": "\n  ".join(f"<li>{t}</li>" for t in m["tips"]), "RELATED": related}
     h = _SONG_TPL
@@ -359,14 +360,21 @@ def _hub(title, desc, url, intro, items):
 @app.get("/letter-notes")
 def songs_hub():
     return HTMLResponse(_hub("Easy piano songs with letters", "Free easy piano sheet music with the letter written under every note, chord symbols and a MIDI file for each song. Public-domain melodies arranged by Notalo.",
-                             "https://notalo.xyz/letter-notes", "Each song below is a public-domain melody arranged for easy piano, with the letter under every note (right hand red, left hand blue), chord symbols, a bar-by-bar letter list, and a MIDI file. Free to print.",
+                             "https://notalo.xyz/letter-notes",
+                             "Each song below is a public-domain melody arranged for easy piano, with the letter under every note (right hand red, left hand blue), chord symbols, a bar-by-bar letter list, and a MIDI file. Free to print.</p>"
+                             "<h2>How to use these pages</h2><p>Letter notes are the oldest shortcut in piano teaching: instead of memorizing where each note sits on the staff, you read the letter and find the key. On every song page the letters are written directly under the notes of a real score, so you learn the staff at the same time — after a few songs you will notice you are reading the notes and ignoring the letters. Each page also has the chord for every bar (for the left hand, or for a guitar), a short history of the tune, a phrase-by-phrase walkthrough, and a MIDI file you can slow down and play along with.</p>"
+                             "<h2>Where to start</h2><p>If you have never played, begin with the five-finger tunes that never move the hand: <a href=\"/letter-notes/mary-had-a-little-lamb\">Mary Had a Little Lamb</a>, <a href=\"/letter-notes/twinkle-twinkle-little-star\">Twinkle Twinkle Little Star</a>, <a href=\"/letter-notes/ode-to-joy\">Ode to Joy</a> and <a href=\"/letter-notes/chopsticks\">Chopsticks</a> use only white keys and a handful of notes. <a href=\"/letter-notes/jingle-bells\">Jingle Bells</a>, <a href=\"/letter-notes/happy-birthday\">Happy Birthday</a> and <a href=\"/letter-notes/amazing-grace\">Amazing Grace</a> add one black key and a slightly wider range. <a href=\"/letter-notes/fur-elise\">Für Elise</a>, <a href=\"/letter-notes/canon-in-d\">Canon in D</a>, <a href=\"/letter-notes/moonlight-sonata\">Moonlight Sonata</a> and <a href=\"/letter-notes/greensleeves\">Greensleeves</a> are the famous classical openings, simplified so a beginner can play the part everyone recognizes.</p>"
+                             "<h2>How these were made</h2><p>We write each arrangement ourselves — melody in the right hand, one simple chord per bar in the left — and engrave it with the free program LilyPond. That clean score then goes through Notalo, the same converter you can use on your own sheet music, which detects every notehead and writes the letters. Because the source is a clean render, the labels on these pages are checked note by note; they double as our accuracy test set. Only public-domain melodies are published here, and no lyrics.</p><h2>All songs</h2><p>",
                              [(k, v) for k, v in SONGS.items() if os.path.exists(os.path.join(STATIC_DIR, "songs", k + ".json"))]))
 
 
 @app.get("/christmas-piano-songs-with-letters")
 def christmas_hub():
     return HTMLResponse(_hub("Christmas piano songs with letters", "Easy Christmas piano sheet music with letters under every note: Jingle Bells, Silent Night, Deck the Halls, We Wish You a Merry Christmas. Chords and MIDI included. Free.",
-                             "https://notalo.xyz/christmas-piano-songs-with-letters", "Traditional Christmas carols for easy piano, each with the letter under every note, chord symbols and a MIDI file to hear it. All public domain, no lyrics, free to print for lessons and family singalongs.",
+                             "https://notalo.xyz/christmas-piano-songs-with-letters",
+                             "Traditional Christmas carols for easy piano, each with the letter under every note, chord symbols and a MIDI file to hear it. All public domain, no lyrics, free to print for lessons and family singalongs.</p>"
+                             "<h2>Which carol first?</h2><p><a href=\"/letter-notes/jingle-bells\">Jingle Bells</a> is the usual first choice: the chorus is three repeated notes and a small hop, and it is the one song every guest can sing along to. <a href=\"/letter-notes/joy-to-the-world\">Joy to the World</a> opens with a plain scale going down, so it is the fastest to learn if you already know your C major scale. <a href=\"/letter-notes/silent-night\">Silent Night</a> and <a href=\"/letter-notes/o-holy-night\">O Holy Night</a> are slow and forgiving — good for a quiet evening. <a href=\"/letter-notes/deck-the-halls\">Deck the Halls</a>, <a href=\"/letter-notes/the-first-noel\">The First Noel</a> and <a href=\"/letter-notes/we-wish-you-a-merry-christmas\">We Wish You a Merry Christmas</a> have a wider range and a few black keys; leave them for the second week.</p>"
+                             "<h2>Practising for the day</h2><p>Start in early December, one carol a week, and play each one slowly with the MIDI file before you try it at tempo. The chord symbols above every bar let a second person join in on guitar or with left-hand chords, which is the easiest way to make a beginner's melody sound full. All of these tunes are centuries old and in the public domain; the arrangements are ours and free to print for a lesson, a school concert or a living room.</p><h2>All carols</h2><p>",
                              [(k, v) for k, v in SONGS.items() if v.get("christmas") and os.path.exists(os.path.join(STATIC_DIR, "songs", k + ".json"))]))
 
 

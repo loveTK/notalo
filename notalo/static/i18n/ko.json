@@ -124,6 +124,7 @@
  "footer.privacy": "업로드한 파일과 결과는 처리 직후 삭제됩니다.",
  "footer.privacy_link": "개인정보 처리방침",
  "footer.terms_link": "이용약관",
+ "footer.about_link": "소개·문의",
  "tool.status_uploading": "업로드 중…",
  "tool.status_one_file": "한 번에 하나의 파일만 처리할 수 있어요.",
  "processing.title": "악보를 변환하고 있어요…",

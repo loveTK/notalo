@@ -124,6 +124,7 @@
  "footer.privacy": "Les fichiers importés et les résultats sont supprimés juste après le traitement.",
  "footer.privacy_link": "Politique de confidentialité",
  "footer.terms_link": "Conditions d'utilisation",
+ "footer.about_link": "À propos et contact",
  "tool.status_uploading": "Envoi en cours…",
  "tool.status_one_file": "Veuillez choisir un seul fichier à la fois.",
  "processing.title": "Conversion de votre partition…",

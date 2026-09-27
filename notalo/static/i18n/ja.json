@@ -124,6 +124,7 @@
  "footer.privacy": "アップロードしたファイルと結果は処理後すぐに削除されます。",
  "footer.privacy_link": "プライバシーポリシー",
  "footer.terms_link": "利用規約",
+ "footer.about_link": "サイトについて・お問い合わせ",
  "tool.status_uploading": "アップロード中…",
  "tool.status_one_file": "一度に1つのファイルのみ選択してください。",
  "processing.title": "楽譜を変換しています…",
