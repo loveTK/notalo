@@ -264,3 +264,36 @@ sitemap에 전부 추가. 각 페이지 JSON-LD `MusicComposition` + `HowTo`.
 
 고친 것: ① `/?lang=xx`를 서버에서 그 언어로 렌더(title·description·`<html lang>`·H1·canonical·og:url 자기 자신) — 전엔 canonical이 전부 `/`라 hreflang이 무시돼 7개 언어가 색인 불가였음 ② og:image·twitter:card 전 페이지 ③ `Cache-Control`(HTML no-cache, `?v=` 자산 1년, 나머지 하루) + gzip ④ 히어로 PNG→WebP(155→44KB) + `fetchpriority=high` ⑤ title 60자 안으로 ⑥ nav에 Songs·Learn 링크.
 남은 것: O Holy Night·Clair de Lune 곡 페이지, sitemap에 hreflang 대체 URL(xhtml:link), fonts.css 149KB 축소, 홍보(Pinterest·YouTube·Reddit — 코드 밖).
+
+---
+
+## 12. 데모 곡 후보 (2026-09-27) — 저작권 없는 곡만
+
+기준: 멜로디가 퍼블릭 도메인(작곡가 사후 70년 + 미국 1930년 이전 출판) **그리고** 편곡은 우리가 `songs/<slug>.ly`에 직접 입력(남의 편곡본·가사 안 씀). 검색량은 `keywords-en-2026-09.csv`에서 곡명 포함 키워드 합산(월).
+
+### 1차 (검색량 순, 전부 OK)
+| # | 곡 | 출처 | 월 검색 | 비고 |
+|---|---|---|---|---|
+| 1 | Clair de Lune (easy) | Debussy 1905, d.1918 | 17,500 | 도입부 8~12마디만 단순화 |
+| 2 | Mary Had a Little Lamb | Lowell Mason 1830 | 11,000 | 동요, 5음 |
+| 3 | Old MacDonald Had a Farm | 전통(1917 채록) | 5,500 | 가사 없이 멜로디만 |
+| 4 | Away in a Manger | Kirkpatrick 1895 (미국식 선율) | 3,000 | 크리스마스 — 10월 안에 |
+| 5 | The Entertainer | Scott Joplin 1902, d.1917 | 3,000 | 도입 주제만 단순화 |
+| 6 | Turkish March (Rondo alla Turca) | Mozart 1783 | 3,000 | 주제 16마디 단순화 |
+| 7 | Brahms' Lullaby | Brahms 1868 | 2,500 | |
+| 8 | Swan Lake (theme) | Tchaikovsky 1876, d.1893 | 2,500 | |
+| 9 | Chopsticks | Euphemia Allen 1877 | 2,000 | |
+| 10 | The First Noel | 전통(1823 출판) | 2,000 | 크리스마스 |
+| 11 | Joy to the World | Lowell Mason 1848 | 2,000 | 크리스마스 |
+| 12 | Auld Lang Syne | 전통 스코틀랜드 | 1,500 | 연말 |
+| 13 | Dance of the Sugar Plum Fairy | Tchaikovsky 1892 | 1,500 | 크리스마스 |
+| 14 | O Holy Night | Adolphe Adam 1847 | 1,500 | 크리스마스, 가사 없이 |
+
+### 2차 (검색 500~1,000)
+Twelve Days of Christmas(전통; 표준 선율은 Austin 1909, d.1952 → 2023부터 PD) · Ave Maria(Schubert 1825) · Eine kleine Nachtmusik(Mozart) · God Rest Ye Merry Gentlemen(전통) · In the Hall of the Mountain King(Grieg d.1907) · Maple Leaf Rag(Joplin 1899) · Nocturne Op.9 No.2(Chopin d.1849) · O Christmas Tree(전통) · Star-Spangled Banner(1814) · Spring/Four Seasons(Vivaldi) · Wedding March(Mendelssohn 1842) · Hark the Herald Angels Sing(Mendelssohn 1840) · London Bridge(전통) · Yankee Doodle(전통) · Itsy Bitsy Spider(전통 1910) · Bingo(전통 1780) · Scarborough Fair(전통 선율만 — Simon & Garfunkel 편곡 ✗) · Take Me Out to the Ball Game(1908) · Blue Danube(Strauss II d.1899) · Beethoven 5th(주제) · Prelude in C(Bach) · Morning Mood(Grieg) · Nutcracker March · Alouette(전통)
+
+### 사용자 판단 필요
+- **Carol of the Bells — 월 91,500(전체 5위)**. 선율 "Shchedryk"은 Leontovych 1914(d.1921)로 PD. 저작권이 남은 건 Wilhousky의 1936 영어 가사·편곡. 가사 없이 우리 편곡으로 선율만 쓰면 법적으로는 가능하나, 지난번엔 보수적으로 제외함. 넣을지 결정 필요.
+
+### 제외 (저작권 살아있음)
+Wheels on the Bus(Verna Hills 1939) · You Are My Sunshine(1939) · Heart and Soul(1938) · Rudolph(1949) · Feliz Navidad(1970) · Jingle Bell Rock(1957) · Santa Claus Is Coming to Town(1934) · Frosty · White Christmas · Kookaburra(1932) · 영화·게임·팝 전부(Harry Potter, Interstellar, River Flows in You, All of Me, Let It Go, Hallelujah, Pirates, Star Wars, Titanic, Megalovania, Moana).
