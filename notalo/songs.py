@@ -109,9 +109,4 @@ SONGS = {
         "intro": "The opening verse \u2014 \u201cO holy night, the stars are brightly shining, it is the night of our dear Savior's birth\u201d \u2014 in C major. Simplified to this one phrase; the famous \u201cFall on your knees\u201d climax reaches a full octave higher and is left for a later, more advanced arrangement.",
         "tips": ["The whole phrase stays within one octave \u2014 no big jumps to worry about.", "Bar 3's high C is the peak of this phrase \u2014 lean into it, then ease back down.", "Left hand holds one chord per bar throughout \u2014 keep it soft under the melody."],
     },
-    "rhapsody-in-blue": {
-        "title": "Rhapsody in Blue (opening, simplified)", "composer": "George Gershwin", "year": 1924, "key": "B\u266d major", "time": "4/4", "bpm": 100,
-        "intro": "Gershwin's famous 1924 concert work opens with a clarinet gliding up through a scale into a jazzy blue-note riff. This is not a note-for-note transcription of that orchestral opening (it's written for a full orchestra, not solo piano) \u2014 it's a simplified, easy-piano piece inspired by that gesture: a rising-then-falling scale for the glide, then a short syncopated blues motif in the same key, B\u266d major.",
-        "tips": ["Bars 1\u20132 are just the B\u266d major scale going up an octave, then straight back down \u2014 no new notes to learn.", "E is always E\u266d and B is always B\u266d here (the key signature) \u2014 both are black keys.", "Bars 3 and 5 are the exact same four notes \u2014 learn the motif once, play it twice."],
-    },
 }
