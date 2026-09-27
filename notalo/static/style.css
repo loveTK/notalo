@@ -38,7 +38,12 @@ nav{display:flex;align-items:center;gap:8px}
 #user{font-size:14px;color:var(--muted);margin:0 4px}
 #lang-switch{width:auto;border:1px solid var(--line);border-radius:999px;background-color:var(--panel);color:var(--fg);font:inherit;font-size:14px;padding:8px 30px 8px 14px;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%238B959D' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;margin-right:4px}
 nav .btn-o{padding:8px 16px;font-size:14px;border-width:1px;border-color:var(--line)}
-@media(max-width:820px){.nav-links{display:none}}
+.nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;padding:0;border:0;background:none;cursor:pointer}
+.nav-burger span{display:block;width:20px;height:2px;background:var(--fg)}
+.nav-scrim{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:40}
+.nav-drawer{position:fixed;top:0;right:0;bottom:0;width:260px;max-width:80vw;background:var(--panel);border-left:1px solid var(--line);z-index:41;display:flex;flex-direction:column;gap:22px;padding:80px 28px}
+.nav-drawer .nav-link{text-transform:none;font-size:16px}
+@media(max-width:820px){.nav-links{display:none}.nav-burger{display:flex}}
 
 /* 히어로: 거대한 워드마크 + 가운데 결과 이미지 + 아래 양쪽 문구/버튼 */
 .hero{position:relative;display:flex;flex-direction:column;min-height:calc(100svh - 88px);padding:0 clamp(16px,3vw,40px) clamp(24px,3vw,40px)}
