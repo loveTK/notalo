@@ -71,4 +71,47 @@ SONGS = {
         "intro": "Verse and chorus in A minor, 6/8 time. The G\u266f and F\u266f accidentals give it the old modal color \u2014 watch for them, they are written in the bars where they happen.",
         "tips": ["The verse (bars 1\u201310) and chorus (bars 11\u201320) share the same second half.", "G\u266f appears in bars 4, 5, 9, 14, 15 and 19 \u2014 always a black key.", "6/8: two big beats per bar, three eighths each. Sway, don\u2019t march."],
     },
+    "mary-had-a-little-lamb": {
+        "title": "Mary Had a Little Lamb", "composer": "Traditional (rhyme published by Sarah Josepha Hale)", "year": 1830, "key": "C major", "time": "4/4", "bpm": 110,
+        "intro": "The nursery rhyme melody in C major \u2014 no sharps or flats, and every note falls between middle C and G. A good first piece: the whole right hand sits in one five-finger position.",
+        "tips": ["Right hand never leaves the C-D-E-F-G position \u2014 no thumb-crossing needed.", "Bars 1 and 5 are identical; once you learn one you know both.", "Left hand is one chord per bar \u2014 C, then G, then back to C."],
+    },
+    "old-macdonald-had-a-farm": {
+        "title": "Old MacDonald Had a Farm", "composer": "Traditional (American)", "year": 1917, "year_text": "early 20th century (verses published)", "key": "C major", "time": "4/4", "bpm": 120,
+        "intro": "The main \u201cE-I-E-I-O\u201d phrase in C major, played twice. Simplified for easy piano \u2014 the many-verse \u201chere a moo, there a moo\u201d section is left out; this is the tune everyone actually remembers.",
+        "tips": ["Bars 1\u20134 and 5\u20138 are exactly the same \u2014 learn one phrase, play the whole song.", "The left hand switches just once per phrase, C to F and back.", "The held whole note at the end of each phrase is the \u201cO\u201d \u2014 let it ring."],
+    },
+    "chopsticks": {
+        "title": "Chopsticks", "composer": "Euphemia Allen (published as \u201cThe Celebrated Chop Waltz\u201d)", "year": 1877, "key": "C major", "time": "4/4", "bpm": 132,
+        "intro": "The two-finger novelty piece everyone plays first, written out as three letters (F E D) sliding down to C, four times. No sharps, no flats, no left-hand melody to learn.",
+        "tips": ["Only four different notes in the whole piece: F, E, D and C.", "Every bar has the exact same shape \u2014 once it's memorized, speed is the only challenge.", "The left hand just holds a C chord throughout \u2014 focus all your attention on the right hand."],
+    },
+    "joy-to-the-world": {
+        "title": "Joy to the World", "composer": "Lowell Mason (adapted from themes attributed to Handel)", "year": 1848, "key": "C major", "time": "4/4", "bpm": 100,
+        "christmas": True,
+        "intro": "Famous for its opening: a full descending scale from high C down to middle C, one note per word (\u201cJoy-to-the-world-the-Lord-is-come\u201d). C major, no sharps or flats.",
+        "tips": ["Bars 1\u20132 are just the C major scale played backwards \u2014 the easiest \u201chard-sounding\u201d line in piano.", "Bars 7\u20138 repeat bars 1\u20132, so the piece is shorter to learn than it looks.", "Keep the descending scale even \u2014 no note should be louder or slower than the others."],
+    },
+    "the-first-noel": {
+        "title": "The First Noel", "composer": "Traditional (English)", "year": 1823, "year_text": "early 19th century (first published)", "key": "C major", "time": "4/4", "bpm": 100,
+        "christmas": True,
+        "intro": "The opening verse and the \u201cNoel, Noel\u201d refrain, in C major. Simplified to the two most recognizable phrases of this English carol \u2014 the middle verses are left out.",
+        "tips": ["The verse climbs step by step from C up to the high C \u2014 a good stretch for a beginner.", "\u201cNoel, Noel\u201d (the refrain) is the same short phrase sung twice.", "The last line \u2014 \u201cBorn is the King of Israel\u201d \u2014 is the highest and longest phrase; take it slowly."],
+    },
+    "auld-lang-syne": {
+        "title": "Auld Lang Syne", "composer": "Traditional (Scottish), words by Robert Burns", "year": 1788, "key": "D major", "time": "4/4", "bpm": 100,
+        "intro": "The New Year's Eve song everyone hums but few can name past the first line, in D major (two sharps: F\u266f and C\u266f). A pentatonic Scottish melody \u2014 mostly skips, few steps.",
+        "tips": ["The tune leans on just five notes (D, E, G, A, B) \u2014 very few half-steps to worry about.", "F\u266f and C\u266f come from the key signature \u2014 every F and C in the piece is sharp.", "The last line repeats the second line almost exactly \u2014 free repetition."],
+    },
+    "o-holy-night": {
+        "title": "O Holy Night", "composer": "Adolphe Adam", "year": 1847, "key": "C major", "time": "4/4", "bpm": 84,
+        "christmas": True,
+        "intro": "The opening verse \u2014 \u201cO holy night, the stars are brightly shining, it is the night of our dear Savior's birth\u201d \u2014 in C major. Simplified to this one phrase; the famous \u201cFall on your knees\u201d climax reaches a full octave higher and is left for a later, more advanced arrangement.",
+        "tips": ["The whole phrase stays within one octave \u2014 no big jumps to worry about.", "Bar 3's high C is the peak of this phrase \u2014 lean into it, then ease back down.", "Left hand holds one chord per bar throughout \u2014 keep it soft under the melody."],
+    },
+    "rhapsody-in-blue": {
+        "title": "Rhapsody in Blue (opening, simplified)", "composer": "George Gershwin", "year": 1924, "key": "B\u266d major", "time": "4/4", "bpm": 100,
+        "intro": "Gershwin's famous 1924 concert work opens with a clarinet gliding up through a scale into a jazzy blue-note riff. This is not a note-for-note transcription of that orchestral opening (it's written for a full orchestra, not solo piano) \u2014 it's a simplified, easy-piano piece inspired by that gesture: a rising-then-falling scale for the glide, then a short syncopated blues motif in the same key, B\u266d major.",
+        "tips": ["Bars 1\u20132 are just the B\u266d major scale going up an octave, then straight back down \u2014 no new notes to learn.", "E is always E\u266d and B is always B\u266d here (the key signature) \u2014 both are black keys.", "Bars 3 and 5 are the exact same four notes \u2014 learn the motif once, play it twice."],
+    },
 }
