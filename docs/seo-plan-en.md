@@ -292,6 +292,9 @@ sitemap에 전부 추가. 각 페이지 JSON-LD `MusicComposition` + `HowTo`.
 ### 2차 (검색 500~1,000)
 Twelve Days of Christmas(전통; 표준 선율은 Austin 1909, d.1952 → 2023부터 PD) · Ave Maria(Schubert 1825) · Eine kleine Nachtmusik(Mozart) · God Rest Ye Merry Gentlemen(전통) · In the Hall of the Mountain King(Grieg d.1907) · Maple Leaf Rag(Joplin 1899) · Nocturne Op.9 No.2(Chopin d.1849) · O Christmas Tree(전통) · Star-Spangled Banner(1814) · Spring/Four Seasons(Vivaldi) · Wedding March(Mendelssohn 1842) · Hark the Herald Angels Sing(Mendelssohn 1840) · London Bridge(전통) · Yankee Doodle(전통) · Itsy Bitsy Spider(전통 1910) · Bingo(전통 1780) · Scarborough Fair(전통 선율만 — Simon & Garfunkel 편곡 ✗) · Take Me Out to the Ball Game(1908) · Blue Danube(Strauss II d.1899) · Beethoven 5th(주제) · Prelude in C(Bach) · Morning Mood(Grieg) · Nutcracker March · Alouette(전통)
 
+**진행(2026-09-28)**: 2차 24곡 중 19곡 페이지 추가 — Twelve Days, Ave Maria, Eine kleine, God Rest Ye, Mountain King, Nocturne Op.9/2, O Christmas Tree, Star-Spangled Banner, Spring, Wedding March, Hark the Herald, London Bridge, Yankee Doodle, Itsy Bitsy Spider, Scarborough Fair, Blue Danube, Beethoven 5, Prelude in C, Morning Mood. 민요·캐럴 8곡은 letter-notes 사이트로 선율 검증, 클래식은 기억으로 단순화 편곡(MIDI 들어보고 이상하면 수정).
+**미작업 5곡**(선율 검증 소스 못 구함, 기억만으로는 불확실): Maple Leaf Rag · Bingo · Take Me Out to the Ball Game · Nutcracker March · Alouette.
+
 ### 사용자 판단 필요
 - **Carol of the Bells — 월 91,500(전체 5위)**. 선율 "Shchedryk"은 Leontovych 1914(d.1921)로 PD. 저작권이 남은 건 Wilhousky의 1936 영어 가사·편곡. 가사 없이 우리 편곡으로 선율만 쓰면 법적으로는 가능하나, 지난번엔 보수적으로 제외함. 넣을지 결정 필요.
 

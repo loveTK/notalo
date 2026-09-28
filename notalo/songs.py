@@ -109,6 +109,105 @@ SONGS = {
         "intro": "The opening verse \u2014 \u201cO holy night, the stars are brightly shining, it is the night of our dear Savior's birth\u201d \u2014 in C major. Simplified to this one phrase; the famous \u201cFall on your knees\u201d climax reaches a full octave higher and is left for a later, more advanced arrangement.",
         "tips": ["The whole phrase stays within one octave \u2014 no big jumps to worry about.", "Bar 3's high C is the peak of this phrase \u2014 lean into it, then ease back down.", "Left hand holds one chord per bar throughout \u2014 keep it soft under the melody."],
     },
+    "twelve-days-of-christmas": {
+        "title": "The Twelve Days of Christmas", "composer": "Traditional (English)", "year": 1780, "year_text": "18th century (melody by Frederic Austin, 1909)", "key": "F major", "time": "4/4", "bpm": 112,
+        "christmas": True,
+        "intro": "The first two verses — “On the first day of Christmas” through “two turtle doves and a partridge in a pear tree” — in F major with one flat. Every later verse just repeats the same two phrases, so once you have these nine bars you have the whole song.",
+        "tips": ["The only black key is B♭, which appears in almost every bar — keep the fourth finger ready for it.", "“A partridge in a pear tree” climbs to the high D in bar 3 and bar 8: that is the top of the piece.", "The pickup “On the” starts on C before the first bar line — count “3, 4” and come in."],
+    },
+    "ave-maria": {
+        "title": "Ave Maria (Schubert, easy)", "composer": "Franz Schubert", "year": 1825, "key": "C major", "time": "4/4", "bpm": 60,
+        "intro": "The opening of Schubert's Ave Maria, moved from B♭ major to C major and simplified to a single melodic line: the long held note, the turn that follows it, and the first “gratia plena” phrase with its two chromatic notes.",
+        "tips": ["Bar 1 is one long G — count all three beats before the turn starts.", "Bar 5 has a G♯ and a B♭ in the same bar: both are black keys, both are passing notes back to the white keys either side.", "Play everything legato and very slowly; the piece is a prayer, not a march."],
+    },
+    "eine-kleine-nachtmusik": {
+        "title": "Eine kleine Nachtmusik (opening)", "composer": "Wolfgang Amadeus Mozart", "year": 1787, "key": "G major", "time": "4/4", "bpm": 120,
+        "intro": "The first eight bars of the first movement: the rising G major fanfare, its answer on D, and the three trilled notes that climb to the top of the phrase before the scale runs back down to G. One sharp (F♯), plus a single C♯ in bar 7.",
+        "tips": ["Bars 1–4 use only the notes of two chords, G major and D major — learn the shapes, not the letters.", "The rests in Mozart's original are written here as longer notes, so the MIDI keeps the same timing.", "Bar 8 is a straight G major scale down from the high G: one finger per note."],
+    },
+    "god-rest-ye-merry-gentlemen": {
+        "title": "God Rest Ye Merry, Gentlemen", "composer": "Traditional (English)", "year": 1650, "year_text": "16th–17th century", "key": "E minor", "time": "4/4", "bpm": 104,
+        "christmas": True,
+        "intro": "Verse and refrain in E minor, one sharp. The two verse lines share the same melody, the refrain (“O tidings of comfort and joy”) climbs to the high E and comes back down to the tonic.",
+        "tips": ["The verse starts and ends on E, the key note, and the chorus does too — use it as your anchor.", "Bars 3 and 7 are a plain scale from D up to G; the D is natural even though the key is E minor.", "The D♯ in the left-hand B major chords (bars 4, 8, 17) is the leading note that makes the minor key sound right."],
+    },
+    "in-the-hall-of-the-mountain-king": {
+        "title": "In the Hall of the Mountain King", "composer": "Edvard Grieg", "year": 1875, "key": "A minor", "time": "4/4", "bpm": 100,
+        "intro": "The creeping main theme from Peer Gynt, moved from B minor to A minor so there are no sharps in the key signature. Eight bars: the low statement twice, then the same tune an octave up.",
+        "tips": ["Bar 1 is just the A minor scale from A up to E and back to C — the whole theme is built from it.", "D♯ in bars 2 and 8 is the only black key; it is answered by a plain D in bar 3.", "Start very slowly and quietly. The piece is famous for speeding up — but only after you can play it evenly."],
+    },
+    "nocturne-op9-no2": {
+        "title": "Nocturne in E-flat, Op. 9 No. 2 (easy)", "composer": "Frédéric Chopin", "year": 1832, "key": "C major", "time": "12/8", "bpm": 50,
+        "intro": "The opening melody of Chopin's most famous nocturne, moved from E♭ major to C major and reduced to its bare tune over one chord per bar. Written in 12/8 so the lilting rhythm reads as plain dotted quarters and eighths.",
+        "tips": ["12/8 means four big beats per bar, each divided into three — count “1-and-a 2-and-a…”.", "The pickup G before bar 1 leads up to the high E: make that first E sing.", "Bar 3 has the piece's only black key, G♯, as a quick neighbour note under the A."],
+    },
+    "o-christmas-tree": {
+        "title": "O Christmas Tree (O Tannenbaum)", "composer": "Traditional (German)", "year": 1824, "year_text": "16th century melody, 1824 lyrics", "key": "F major", "time": "3/4", "bpm": 100,
+        "christmas": True,
+        "intro": "The complete carol in F major, 3/4 time: the “O Christmas Tree” phrase, the middle section (“Not only green when summer's here”), and the return. One flat, B♭.",
+        "tips": ["The dotted rhythm on “Christ-mas” (bars 1, 2, 11, 12) is the whole character of the song — long-short, not two equal notes.", "Bar 3 dips to a low E under the B♭ — the widest leap in the piece.", "The middle section (bars 5–10) sits higher, up to the D above the staff."],
+    },
+    "star-spangled-banner": {
+        "title": "The Star-Spangled Banner", "composer": "John Stafford Smith", "year": 1773, "year_text": "1773 melody, 1814 words", "key": "C major", "time": "3/4", "bpm": 100,
+        "intro": "The first half of the American national anthem in C major, 3/4 time, from “O say can you see” to “last gleaming”. The range is wide — from the low C to the E above the staff — which is exactly why it is famously hard to sing.",
+        "tips": ["The pickup “O say” is a dotted rhythm: long G, short E.", "Bar 3's F♯ is the only black key; it leads up to the G in bar 4.", "Bars 5–6 are the peak: high E, then D, C, B on the way down. Do not rush the B."],
+    },
+    "spring-vivaldi": {
+        "title": "Spring (The Four Seasons, opening)", "composer": "Antonio Vivaldi", "year": 1725, "key": "C major", "time": "4/4", "bpm": 100,
+        "intro": "The opening ritornello of Spring from The Four Seasons, moved from E major to C major so there are no sharps. The same two-bar idea is stated four times, exactly as Vivaldi has the whole orchestra do.",
+        "tips": ["Bars 1 and 2 are the entire piece — learn them and you have all eight bars.", "The quick D–C in bar 1 is a pair of sixteenths: think of it as one gesture, not two notes.", "Left hand alternates C and G chords; keep it light and short like a string orchestra playing detached."],
+    },
+    "wedding-march": {
+        "title": "Wedding March (Mendelssohn)", "composer": "Felix Mendelssohn", "year": 1842, "key": "C major", "time": "4/4", "bpm": 112,
+        "intro": "The main theme of the Wedding March from A Midsummer Night's Dream in C major: three rising statements of the “long, short-short, long” figure, a run back down, and the same again ending on the high C.",
+        "tips": ["The rhythm is the same in bars 1, 2, 3, 5, 6, 7: quarter, two eighths, half. Get it once and repeat.", "Bar 4 is the only bar that moves quickly — a small leap up to E and a walk back down to D.", "All white keys; the left hand only alternates C and G chords."],
+    },
+    "hark-the-herald-angels-sing": {
+        "title": "Hark! The Herald Angels Sing", "composer": "Felix Mendelssohn", "year": 1840, "year_text": "1840 melody, 1739 words", "key": "G major", "time": "4/4", "bpm": 108,
+        "christmas": True,
+        "intro": "The first two lines of the carol in G major, one sharp: “Hark! the herald angels sing, glory to the newborn King” and “Peace on earth and mercy mild, God and sinners reconciled”. Lines 1 and 3 share a melody.",
+        "tips": ["Every F is F♯ — it appears in bars 1, 5 and 8.", "Bar 3 jumps to the high D and stays there for three notes: “Glo-ry to”.", "The last phrase walks straight down from A to D: A, G, F♯, E, D."],
+    },
+    "london-bridge": {
+        "title": "London Bridge Is Falling Down", "composer": "Traditional (English)", "year": 1744, "year_text": "17th century", "key": "C major", "time": "4/4", "bpm": 108,
+        "intro": "The nursery rhyme in C major, eight bars, all white keys, within the five notes from C to A. A good very first piece: the hand never has to move.",
+        "tips": ["Bar 1 starts on G with a dotted rhythm: long G, short A, then G, F.", "Bars 3 and 4 are the two echoes, “falling down, falling down”: D-E-F, then E-F-G.", "The last two bars, “my fair lady”, are four slow notes: D, G, E, C."],
+    },
+    "yankee-doodle": {
+        "title": "Yankee Doodle", "composer": "Traditional (American)", "year": 1755, "year_text": "18th century", "key": "C major", "time": "2/4", "bpm": 116,
+        "intro": "Verse and chorus in C major, 2/4 time, all white keys. The verse sits on C, D, E, F; the chorus (“Yankee Doodle keep it up”) drops to the A below and swings between A and C.",
+        "tips": ["2/4 time: two beats per bar, mostly in pairs of eighth notes — count “1 and 2 and”.", "Bar 7 dips to the low G and climbs back through A, B to C.", "The chorus starts on A (bar 9): the first note that is not part of the C–F run of the verse."],
+    },
+    "itsy-bitsy-spider": {
+        "title": "Itsy Bitsy Spider", "composer": "Traditional (American)", "year": 1910, "year_text": "early 20th century", "key": "C major", "time": "6/8", "bpm": 100,
+        "intro": "The children's song in C major and 6/8 time, from “The itsy bitsy spider climbed up the water spout” through “climbed up the spout again”. All white keys, from the G below middle C to the G above it.",
+        "tips": ["6/8 has two big beats per bar with three eighth notes in each — a gentle swing, not a march.", "“Down came the rain” (bars 4–5) rises E, F, G: the highest point of the song.", "Bars 11–14 are bars 1–4 again — the ending is the beginning."],
+    },
+    "scarborough-fair": {
+        "title": "Scarborough Fair", "composer": "Traditional (English)", "year": 1670, "year_text": "17th century", "key": "A minor (Dorian)", "time": "3/4", "bpm": 96,
+        "intro": "The English folk ballad in A minor, 3/4 time — the old modal tune with its raised F♯ (the Dorian sixth) in bar 5. Fourteen bars: the question, “parsley, sage, rosemary and thyme”, and the answer.",
+        "tips": ["The F♯ in bar 5 is what makes the tune sound ancient; play it as written, not F.", "“Parsley, sage” (bar 4) leaps up to the high A — the peak of the melody.", "The last line, “she once was a true love of mine”, ends back on the A you started from."],
+    },
+    "blue-danube": {
+        "title": "The Blue Danube (waltz theme)", "composer": "Johann Strauss II", "year": 1866, "key": "D major", "time": "3/4", "bpm": 150,
+        "intro": "The first waltz theme of An der schönen blauen Donau in D major, two sharps. The rising D–F♯–A, the held A, and the two high answering notes that everyone knows. Twelve bars, one chord per bar.",
+        "tips": ["Waltz time: a strong first beat, two light ones. Count “ONE two three”.", "The high pairs in bars 3–4 and 7–8 jump up an octave and more — keep the wrist loose and aim for the A and F♯ above the staff.", "F♯ and C♯ are the two black keys; C♯ only appears in the left hand's A major chords."],
+    },
+    "beethoven-5th-symphony": {
+        "title": "Symphony No. 5 (opening motif)", "composer": "Ludwig van Beethoven", "year": 1808, "key": "A minor", "time": "2/4", "bpm": 108,
+        "intro": "The most famous four notes in music, moved from C minor to A minor: three short E's and a long C, three short D's and a long B, then the motif climbing through the sequence Beethoven uses to build the first theme.",
+        "tips": ["The three pickup notes come before the bar line — count “1 and” and start on “and”.", "Every group is three quick notes and one long one: short-short-short-LONG.", "The G♯ appears only in the left-hand E major chords; the melody is all white keys."],
+    },
+    "prelude-in-c": {
+        "title": "Prelude in C major, BWV 846", "composer": "Johann Sebastian Bach", "year": 1722, "key": "C major", "time": "4/4", "bpm": 66,
+        "intro": "The first eight bars of the prelude that opens The Well-Tempered Clavier, written as one broken chord per bar. Each bar is eight eighth notes: the two lowest notes, then the top three played twice. All white keys except the F♯ in bar 6.",
+        "tips": ["Every bar is one chord, spread out — read the chord symbol first, then the letters fall into place.", "The first two notes of each bar are the left hand's notes in Bach's original; we give them to the right hand so you can hear the whole pattern.", "Keep the eighth notes perfectly even; nothing should be accented."],
+    },
+    "morning-mood": {
+        "title": "Morning Mood (Peer Gynt)", "composer": "Edvard Grieg", "year": 1875, "key": "C major", "time": "6/8", "bpm": 60,
+        "intro": "The sunrise theme from Peer Gynt, moved from E major to C major so it is all white keys. Eight bars of the pentatonic motif — G, E, D, C, D, E — and its answer that rises to A.",
+        "tips": ["The five notes C, D, E, G, A are the whole piece: it is a pentatonic tune, the same scale as the black keys.", "6/8 time, slow: each bar is two gentle beats of three notes.", "Bars 3, 6 and 7 are the answering shape that lifts to A — let it swell a little and then settle back."],
+    },
 }
 
 # 곡별 해설·연주법 (애드센스 "가치 없는 콘텐츠" 판정 대응: 곡 페이지마다 글자표 말고 실제 읽을 글이 있어야 함). 마디 번호는 static/songs/<slug>.json의 bars 기준.
@@ -192,6 +291,82 @@ TEXT = {
     "o-holy-night": {
         "about": "Adolphe Adam, a French opera composer, wrote 'Minuit, chrétiens' in 1847 to a poem by the wine merchant Placide Cappeau; John Sullivan Dwight's English version followed in 1855. It is often said to be the first piece of music broadcast by radio, played on the violin by Reginald Fessenden on Christmas Eve 1906. The full song climbs to a famous high note on 'O night divine'; this page gives the gentler opening verse.",
         "play": "'O holy night' is E E E G. 'The stars are brightly shining' is G A A F, then A up to C and back to G — the high C in bar 3 is the top of this phrase. 'It is the night' walks down G E D C. 'Of our dear Savior's birth' is E F A F, D and a long C. Everything is on white keys and within one octave. Play it slowly and legato, with a little swell towards the high C and a soft landing on the last C.",
+    },
+    "twelve-days-of-christmas": {
+        "about": "The words were first printed in London around 1780 as a children's memory game, and the melody most people sing today was set down by the English composer Frederic Austin in 1909 — including the drawn-out “five gold rings”, which was his addition. The cumulative structure, each verse adding a gift and repeating all the earlier ones, is why the full song runs to twelve verses and several minutes. Our page gives only the first two verses, which contain every phrase the melody has.",
+        "play": "“On the first day of Christmas” is C C, then F F F F E — a pickup of two C's and five notes on F with a small drop to E. “My true love gave to me” climbs F G A up to B♭ and comes back G A. “A partridge in a pear tree” is B♭ C D, the high point, then B♭ A F G F home to the key note. Verse two adds “two turtle doves” — C G A B♭ — before the same “and a partridge” tail. Play the left hand as one whole-bar chord under each phrase: F, C, B♭ and F.",
+    },
+    "ave-maria": {
+        "about": "Schubert wrote this in 1825 as “Ellens dritter Gesang”, the third of Ellen's songs from Walter Scott's The Lady of the Lake, in a German translation; the Latin prayer text that is usually sung to it today was fitted on later. Its opening — a single long note followed by a gentle turn — has made it a fixture of weddings and funerals for two centuries. The original is in B♭ major with a flowing six-note accompaniment; we have moved it to C major and kept only the melody with one plain chord per bar.",
+        "play": "Bar 1 is a G held for three full beats and then the turn A G. Bar 2 continues F E D E and rests on F, with G as the pickup into bar 3, which repeats the turn a step higher: A G F E D, then A B. Bar 4 is a long A. Bar 5 is the chromatic bar: G♯ E G F E G A B♭ — every note a step from the last. Bars 6 to 8 come home: G E F A, G G D, then B D and a long C. Keep the left hand very soft and let every right-hand note connect to the next.",
+    },
+    "eine-kleine-nachtmusik": {
+        "about": "Mozart entered this serenade for strings into his own catalogue in August 1787, while he was writing Don Giovanni; the title just means “a little night music”. It was not published until 1827, after his death, and one of its original five movements is lost. The first movement's opening — a bold rising arpeggio in G, answered by the same shape in D — is probably the best known eight bars of classical music after Beethoven's Fifth.",
+        "play": "Bar 1 alternates G and D, low and high: G D G D. Bar 2 runs up the G chord, G D G B, and lands on a long D. Bars 3 and 4 do the same on the D chord: C A C A, then C A F♯ A and a long D. Bar 5 starts the second idea: a long G, then G with a quick F♯–G under it; bar 6 does that on B, bar 7 on D with a C♯ turn. Bar 8 is a G major scale from the high G straight down to the G you started on. Play bars 1–4 short and crisp, 5–8 smooth.",
+    },
+    "god-rest-ye-merry-gentlemen": {
+        "about": "One of the oldest carols still sung, printed in England by the 1760s and probably older; Dickens quotes its first line in A Christmas Carol when Scrooge chases a singer away with a ruler. The tune is in the minor, which is unusual for a carol and gives it a serious, marching character. The comma belongs after “merry”: the words mean “God keep you merry”, not “merry gentlemen”.",
+        "play": "Verse: E then E B B A, G F♯ E, D E F♯ G, A B — up the scale and back down. The second line is the same. Refrain: “To save us all from Satan's power” is B C A B C D E, then B A; “when we were gone astray” is A G E F♯ G. “O tidings of comfort and joy” is G A B C B B A G F♯ E; the last “O tidings” rises G A B C D E and falls B A G F♯ E to finish on the key note. Left hand: E minor most of the way, G and B major chords where the melody leans on D and B.",
+    },
+    "in-the-hall-of-the-mountain-king": {
+        "about": "Grieg wrote this in 1875 as incidental music for Ibsen's play Peer Gynt, for the scene in which Peer is chased by trolls in the hall of their king. Grieg disliked the piece and called it something that “reeks of cow dung”, but its slow creeping start and relentless acceleration have made it one of the most used pieces of music in film and television. The original is in B minor and begins in the lowest strings.",
+        "play": "Bar 1 is the A minor scale climbing A B C D E, then C E. Bar 2 answers with D♯ B D♯ — the D♯ is the one black key. Bar 3 is the same shape on a plain D: D B D. Bar 4 repeats bar 1. Bar 5 is the tune an octave up on the chord: A E C E and a long A; bar 6 is G E G; bar 7 repeats bar 5; bar 8 closes with G♯ E and a held A. Start slow and soft, then, once the notes are secure, play it again a little faster and louder — that is what the orchestra does.",
+    },
+    "nocturne-op9-no2": {
+        "about": "Chopin published the three Nocturnes Op. 9 in 1832, when he was 22 and newly arrived in Paris, and dedicated them to the pianist Marie Pleyel. The second, in E♭ major, became the most played of all his nocturnes: a slow song-like melody over a rocking left hand, decorated more each time it returns. The original is in E♭ with three flats and runs to 34 bars; our page gives the first melody only, moved to C major.",
+        "play": "The pickup G leads to the high E in bar 1: E, then D E D, C held, then G. Bar 2 is C, then D C B, C held, G again. Bar 3 is A, B A G♯, A held, C — the G♯ is the only black key. Bar 4 falls B, A G F, E, G. Bars 5 to 8 repeat the shape with a different ending: bar 6 rises to E, bar 7 D, E D C, B then D, and bar 8 is a single long C for the whole bar. Play at about 50 beats a minute, one soft chord per bar in the left hand.",
+    },
+    "o-christmas-tree": {
+        "about": "The melody is a German folk tune from the 16th century; the words “O Tannenbaum” were written by Ernst Anschütz, a Leipzig organist, in 1824, and turned an older love song about a fir tree into a Christmas carol. The same tune carries the state songs of Maryland, Iowa and Michigan and the socialist anthem “The Red Flag”. In 3/4 time, it is a gentle waltz rather than a march.",
+        "play": "The pickup C leads to “O Christmas Tree”: F F F, G, then A A A, A, with the dotted rhythm on “Christ-mas”. “Thy leaves are so unchanging” is A G A B♭, E, G, F. The middle section starts on the high C: C, A D C, C C B♭, a long B♭, then B♭ G C, B♭ B♭ A and a long A. The pickup C brings back the opening phrase, and the last bar settles on F. Left hand: F and C chords throughout, one B♭ chord in bar 7.",
+    },
+    "star-spangled-banner": {
+        "about": "The tune began as “To Anacreon in Heaven”, a London gentlemen's club song written by John Stafford Smith around 1773. Francis Scott Key set his poem about the bombardment of Fort McHenry to it in 1814, and it became the official United States national anthem in 1931. It spans an octave and a fifth, which is why it is so often sung badly; on the piano that range is no trouble at all.",
+        "play": "“O say can you see” is the pickup G E, then C E G and the high C. “By the dawn's early light” is E D C, E F♯ G. “What so proudly we hailed” is G G, E D C, B. “At the twilight's last gleaming” is A B C C, G E and a long low C. Watch the two long notes: the high C in bar 2 and the G in bar 4 are each held two beats. The left hand plays C, D, G and C chords — the D chord under bar 3 is what gives the F♯ its lift.",
+    },
+    "spring-vivaldi": {
+        "about": "Vivaldi published The Four Seasons in 1725 in Amsterdam as the first four of his twelve concertos Op. 8, each with a sonnet describing the scenes the music paints — birds, a thunderstorm, a sleeping goatherd. Spring's opening theme returns again and again between the solo episodes, which is what a ritornello is. The original is for solo violin and strings in E major with four sharps; we have moved it to C.",
+        "play": "Bar 1 is C E E E, a quick D C, then G held and a short G. Bar 2 answers G F E, a quick F E, and a long D. Bars 3 and 4 are the same, ending on C instead. Bars 5 to 8 repeat all four bars, with the final bar simply G F E D and a long C. Keep the eighth notes short and springy — Vivaldi marks the theme Allegro and the strings play it detached — and let the left hand C and G chords bounce with it.",
+    },
+    "wedding-march": {
+        "about": "Mendelssohn wrote the Wedding March in 1842 as part of his incidental music for Shakespeare's A Midsummer Night's Dream, seventeen years after his famous overture to the same play. It became the standard recessional at weddings after Queen Victoria's daughter chose it for her marriage to the Crown Prince of Prussia in 1858. The original is for full orchestra with trumpet fanfares in C major; this page gives its main tune.",
+        "play": "Bar 1 is C, C C, and a long E; bar 2 is E, E E, and a long G; bar 3 is G, G G, and a long B — three steps up the chord with the same rhythm each time. Bar 4 leaps to E, then A G F down to D. Bars 5 to 7 repeat bars 1 to 3, and bar 8 lands on a whole-note high C. Play it strongly with a firm left hand: C chords under the C and E bars, G chords under the G and B bars.",
+    },
+    "hark-the-herald-angels-sing": {
+        "about": "Charles Wesley wrote the words in 1739; the tune came a century later from a cantata Mendelssohn composed in 1840 to celebrate the 400th anniversary of Gutenberg's printing press. The English organist William Cummings joined the two in 1855, against Mendelssohn's stated wish that the music never be used for sacred words. It is now one of the three or four most sung carols in the English-speaking world.",
+        "play": "“Hark the herald angels sing” is D, G G F♯ G, B B A — a pickup D, a dotted G–F♯, and the climb to B. “Glory to the newborn King” starts on the high D: D D D C, then B A and a long B. “Peace on earth and mercy mild” repeats the first line exactly. “God and sinners reconciled” is D A A G, then F♯ E and a long D home. The left hand is G and D chords; every F is sharp.",
+    },
+    "london-bridge": {
+        "about": "The rhyme about the bridge that keeps falling down was printed in London in 1744 and is probably much older; the tune we sing was published in the 1870s. The bridge itself was rebuilt many times between the Roman period and the 1970s, when the 1831 stone bridge was sold to an American developer and re-erected in Arizona. The song is in nearly every beginner piano book because it needs only five notes.",
+        "play": "“London Bridge is falling down” is G A G F, E F G — a long G, a short A, then down and back. “Falling down, falling down” is D E F, then E F G. The first line repeats. “My fair lady” is four slow notes: D, G, E and C. Play with the right thumb on C and one finger per note; the hand never moves. Left hand: C chords, with a G chord under each “falling down”.",
+    },
+    "yankee-doodle": {
+        "about": "The tune was known in England in the 1750s and was first sung by British soldiers to mock the colonial troops during the French and Indian War; the Americans adopted it as their own and played it at the British surrender at Yorktown in 1781. The “macaroni” of the lyric was a slang word for a fashionable young man. It is the state song of Connecticut and one of the first tunes American children learn.",
+        "play": "“Yankee Doodle went to town” is C C D E, C E D. “Riding on a pony” is C C D E, C B. “He stuck a feather in his cap” is G C C D E, F E D. “And called it macaroni” is C B G A, B C C. The chorus drops to A: “Yankee Doodle keep it up” is A B A G, A B C; “Yankee Doodle dandy” is G A G F, E G. “Mind the music and the step” repeats the A B A G phrase, and “with the girls be handy” is A G C B, D C C. Two beats a bar, brisk and cheerful.",
+    },
+    "itsy-bitsy-spider": {
+        "about": "The spider that climbs the water spout, is washed out by the rain and climbs back up when the sun comes out first appeared in American print in 1910, as “Spider Song”, and was recorded as a children's song by 1920. It is usually sung with finger movements — thumb to index finger for the climbing spider, wiggling fingers for the rain — and it is sung in the same 6/8 lilt everywhere from Australia (as “Incy Wincy Spider”) to the United States.",
+        "play": "The pickup G starts “The itsy bitsy spider”: C C C D, E E E. “Climbed up the water spout” is D C D E, C. “Down came the rain” is E F G; “and washed the spider out” is G F E F G E. “Out came the sun” is C C D E; “and dried up all the rain” is E D C D E C. Then G G lead back into “the itsy bitsy spider” and the last line, “climbed up the spout again”, D C D E C. Two gentle beats per bar; the left hand is C and G chords.",
+    },
+    "scarborough-fair": {
+        "about": "A ballad about a lover who sets impossible tasks — a shirt with no seams, an acre of land between the sea and the shore — sung in Yorkshire since at least the 17th century; Scarborough's fair itself ran for 45 days every summer from 1253. The tune is in the Dorian mode, a minor scale with a raised sixth, which is why it sounds older than most folk songs. Simon & Garfunkel's 1966 recording is a copyrighted arrangement; the traditional melody on this page is public domain.",
+        "play": "“Are you going to Scarborough Fair” is A A E, E B C B, A. “Parsley, sage” leaps up E G A; “rosemary and thyme” is G E F♯, D — the F♯ is the Dorian note that gives the tune its colour. “Remember me to one who lives there” is A A G, E E, D C B, A. “She once was a true love of mine” is A D C, B A G, E and a long A. One chord per bar in the left hand: mostly A minor, with C, G and D chords where the melody rests on those notes.",
+    },
+    "blue-danube": {
+        "about": "Strauss wrote the waltz in 1866 for the Vienna Men's Choral Society, with a comic text, and it was a lukewarm success until it was played as an orchestral piece at the Paris World's Fair the next year. It has since become Austria's unofficial anthem, the traditional New Year's Day encore of the Vienna Philharmonic, and — thanks to Stanley Kubrick's 2001: A Space Odyssey — the sound of a space station turning. The full waltz is a chain of five waltzes; this is the first.",
+        "play": "Bar 1 rises D F♯ A, and bar 2 holds the A. Bar 3 answers with two high A's, bar 4 with two high F♯'s. Bars 5 and 6 repeat the rise and the held A; this time the answer is two high A's and then two high G's, over the left hand's A major chord. Bars 9 to 12 rise once more and settle on a long D. Play the three-note rise smoothly, hold the long notes for their full value, and drop the two high notes in lightly, like the echo they are.",
+    },
+    "beethoven-5th-symphony": {
+        "about": "Beethoven worked on his Fifth Symphony between 1804 and 1808 and conducted its premiere in Vienna in December 1808 at a four-hour concert in an unheated hall. The opening four-note motif — “fate knocking at the door”, according to his secretary, though Beethoven never said so — is built into almost every bar of the first movement. During the Second World War the BBC used it as a signature because its rhythm, short-short-short-long, is the letter V in Morse code.",
+        "play": "Three quick E's lead to a long C. Three quick D's lead to a long B, held two bars. Then the motif climbs: E E E to C, F F F to D, G G G to E. Each group is exactly the same rhythm — three eighth notes and a held note — so once bar 1 is right the rest is copying. Keep the eighths short and identical; the whole point is that they never vary. The left hand plays A minor and E major chords, then D minor and C as the motif rises.",
+    },
+    "prelude-in-c": {
+        "about": "Bach finished the first book of The Well-Tempered Clavier in 1722, a set of preludes and fugues in all 24 keys to show that a keyboard tuned in the new “well-tempered” way could play in any of them. The Prelude in C that opens it has no melody at all: it is a chain of broken chords, one per bar, whose slowly shifting harmonies do all the work. Gounod later wrote his own Ave Maria as a tune to sit on top of it.",
+        "play": "Each bar is one chord spread from bottom to top: the two lowest notes once, then the top three notes twice. Bar 1 is C E G C E. Bar 2 is C D A D F — the same C, then D minor above it. Bar 3 is B D G D F, a G seventh. Bar 4 returns to C. Bar 5 is C E A E A, bar 6 C D F♯ A D — the only black key — bar 7 B D G D G, and bar 8 B C E G C. Play every note evenly and softly, and let the chord symbols above the staff tell you where the harmony is going.",
+    },
+    "morning-mood": {
+        "about": "The sunrise music from Peer Gynt, written by Grieg in 1875 for Ibsen's play — where, despite its Norwegian sound, it accompanies a dawn in the Moroccan desert. Grieg later extracted it as the first movement of his Peer Gynt Suite No. 1, and it has been used for every kind of sunrise since. The theme is pentatonic (five notes only) and passes between flute and oboe in the original; the key there is E major.",
+        "play": "The motif is G E D C D E: down the scale from G to C and back up two notes. Bars 1 and 2 play it twice. Bar 3 lifts the answer: G E G A E A. Bar 4 returns to the motif, bar 5 repeats it, and bars 6 and 7 give the lifted answer twice. Bar 8 starts the motif once more and settles on a long C. Play it as slowly as you can bear, with the left-hand chords (C and F) sounding for the whole bar, and a small swell each time the line rises to A.",
     },
 }
 for _k, _v in TEXT.items():
