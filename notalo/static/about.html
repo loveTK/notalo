@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YKTS1ZLM3G"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YKTS1ZLM3G');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1044528124208901" crossorigin="anonymous"></script>
+<title>About Notalo – Who Makes It and How It Works</title>
+<meta name="description" content="Notalo is a free tool that reads a photo or PDF of piano sheet music and writes the letter under every note. Who makes it, how the note detection works, what it can and cannot read, and how to get in touch.">
+<meta property="og:title" content="About Notalo"><meta property="og:description" content="Who makes Notalo, how the note detection works, and how to contact us."><meta property="og:url" content="https://notalo.xyz/about"><meta property="og:image" content="https://notalo.xyz/hero/sample_en.webp?v=1"><meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://notalo.xyz/about">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#0C0C0C">
+<link rel="stylesheet" href="/fonts.css?v=4">
+<link rel="stylesheet" href="/style.css?v=4">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "AboutPage", "name": "About Notalo", "url": "https://notalo.xyz/about", "inLanguage": "en", "mainEntity": {"@type": "Organization", "name": "Notalo", "url": "https://notalo.xyz/", "email": "xorud386@gmail.com"}}</script>
+<div class="wrap">
+<header>
+  <a class="brand" href="/">Notalo</a>
+  <nav><span class="nav-links"><a class="nav-link" href="/letter-notes">Demo songs</a><a class="nav-link" href="/how-to-read-sheet-music">How to read</a><a class="nav-link" href="/sheet-music-scanner">Scanner</a></span><a class="btn-o" href="/#tool">Add letters</a></nav>
+</header>
+<main class="article">
+<p class="toc"><a href="/">Notalo</a> › About</p>
+<h1>About Notalo</h1>
+<p class="lead">Notalo takes a photo or PDF of piano sheet music and gives it back with the letter name written under every note, chord symbols above every bar, and a MIDI file of what it read. It is free, runs in the browser, and keeps nothing you upload.</p>
+
+<h2>Why it exists</h2>
+<p>Most people who want to play a piece of piano music already own the sheet music — a book, a print-out, a PDF from a teacher. What stops them is reading it. The usual answer is to memorize the staff first and play later; Notalo turns that around. You play today, with the letters written in, and the staff becomes familiar because you keep seeing the note and its name together. Letter notes are how beginners have always learned; this just puts them on the sheet you already have, in seconds, instead of by hand.</p>
+<p>The other reason is that the existing tools all assume a MusicXML file. If your music is a photo of a page, none of them help. Notalo reads the image itself.</p>
+
+<h2>How it works</h2>
+<ol>
+  <li><strong>Find the staff.</strong> The page is straightened, uneven lighting is evened out, and the five-line staves are located by looking for long horizontal lines at even spacing.</li>
+  <li><strong>Find the symbols.</strong> A small neural network (a YOLO detector) marks every notehead, clef, sharp, flat and natural. It was trained on <a href="https://zenodo.org/records/4012193" rel="noopener">DeepScoresV2</a>, an open dataset of engraved sheet music from the Zurich University of Applied Sciences (Tuggener et al., CC BY 4.0).</li>
+  <li><strong>Work out the pitch.</strong> Each notehead's position on its staff, the clef, the key signature and any accidental earlier in the bar decide the letter. Note lengths come from the notehead type, flags, beams and dots.</li>
+  <li><strong>Write it back.</strong> The letters are drawn under the notes in the original image — red for the right hand, blue for the left — with a chord guess above each bar, and a MIDI file is generated from the same notes.</li>
+</ol>
+<p>On our own test set of clean, printed scores it reads 100% of the pitches correctly; on blurry phone photos it is closer to 95%, and it does not yet read rests, ties or tuplets, so the MIDI timing can drift in busy passages. The <a href="/sheet-music-scanner">scanner page</a> lists what works best.</p>
+
+<h2>What is on this site</h2>
+<ul>
+  <li>The <a href="/">converter</a> itself, in eight languages, with letters (C D E), solfège (Do Re Mi), German names, Japanese kana or numbers as the label style.</li>
+  <li><a href="/letter-notes">Demo songs</a>: public-domain pieces we arranged for easy piano, run through the same converter, and published with the letters, the chords, a MIDI file, and a note on where the tune comes from and how to play it. New songs are added regularly.</li>
+  <li>Guides on <a href="/how-to-read-sheet-music">how to read sheet music</a>, <a href="/treble-clef-notes">treble clef notes</a> and <a href="/bass-clef-notes">bass clef notes</a>, illustrated with our own labeled scores.</li>
+</ul>
+
+<h2>Copyright</h2>
+<p>Every piece of sheet music published on this site is a melody in the public domain — the composer has been dead for more than 70 years, or the work was published before 1930 — arranged and engraved by us. We do not publish other people's editions, and we do not include lyrics. When you upload your own sheet music, it is processed and then deleted; nothing is stored or shown to anyone else. If you believe something here infringes your rights, see the notice procedure in our <a href="/terms.html">Terms of Service</a>.</p>
+
+<h2>Who makes it</h2>
+<p>Notalo is built and run by one independent developer in South Korea. It started as a tool for a family member learning piano and grew from there. It is supported by advertising so that the converter can stay free and without sign-up.</p>
+
+<h2>Contact</h2>
+<p>Questions, a page that converted badly, a song you would like to see added, or a copyright concern: email <a href="mailto:xorud386@gmail.com">xorud386@gmail.com</a>. If a conversion went wrong, attaching the page you uploaded helps a lot — that is how most of the detector's improvements have started.</p>
+
+<div class="cta"><p><strong>Try it.</strong> Upload a photo or PDF of any piano sheet music and see the letters under every note.</p><a class="btn-p" href="/#tool">Add letters to my sheet music</a></div>
+</main>
+<footer>
+  <span class="brand">Notalo</span>
+  <div>
+    <p>The note-detection model was trained on the <a href="https://zenodo.org/records/4012193" rel="noopener">DeepScoresV2</a> dataset (Tuggener et al., CC BY 4.0).</p>
+    <p>Uploaded files and results are deleted right after processing.</p>
+    <p><a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a> · <a href="/about">About &amp; Contact</a></p>
+    <p><a href="/">Sheet music with letters</a> · <a href="/letter-notes">Demo songs</a> · <a href="/christmas-piano-songs-with-letters">Christmas songs</a> · <a href="/sheet-music-scanner">Sheet music scanner</a> · <a href="/sheet-music-to-midi">Sheet music to MIDI</a> · <a href="/how-to-read-sheet-music">How to read sheet music</a></p>
+  </div>
+</footer>
+</div>
+</html>
