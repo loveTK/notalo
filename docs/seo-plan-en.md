@@ -300,3 +300,21 @@ Twelve Days of Christmas(전통; 표준 선율은 Austin 1909, d.1952 → 2023�
 
 ### 제외 (저작권 살아있음)
 Wheels on the Bus(Verna Hills 1939) · You Are My Sunshine(1939) · Heart and Soul(1938) · Rudolph(1949) · Feliz Navidad(1970) · Jingle Bell Rock(1957) · Santa Claus Is Coming to Town(1934) · Frosty · White Christmas · Kookaburra(1932) · 영화·게임·팝 전부(Harry Potter, Interstellar, River Flows in You, All of Me, Let It Go, Hallelujah, Pirates, Star Wars, Titanic, Megalovania, Moana).
+
+## 13. 애드센스 재심사 대응 (2026-10-10)
+
+**반려 사유**: "가치가 별로 없는 콘텐츠(Low value content)". 구글 커뮤니티 공식 가이드(Diamond Product Expert) 요지: ① 도구/웹앱 사이트는 봇 단계에서 탈락하기 쉬움 → **글이 있는 사이트**여야 함 ② E-E-A-T: 만든 사람을 **실명으로** 밝히고 검증 가능해야 함(익명 "we"는 감점) ③ 한 달 이상 된 사이트, 구글에 색인됨, 정기적 게시 ④ About·Contact·Privacy 필수 ⑤ 수정 후 **2~4주** 기다렸다 재신청(며칠 만에 재신청은 역효과), 신청 정보는 바꾸지 말 것 ⑥ 글을 한 주에 10배로 늘리면 "승인용 사이트"로 봄 → 몇 주에 걸쳐 분산.
+
+**이번에 반영한 것**
+- `/learn` 허브 + 글 7편(각 1,000~1,300단어, 우리 측정치·파이프라인·편곡 경험에서만 나올 수 있는 내용): 악보 사진 찍는 법 / OMR 원리와 Audiveris 비교 / MIDI 변환 한계 / 글자 떼기 4주 플랜 / 조표를 곡으로 설명 / 퍼블릭 도메인 판단법 / 코드 기호 읽기. `articles.py`.
+- 글마다 바이라인·날짜·Article 스키마(author). **`app.py`의 `AUTHOR`를 실명으로 바꿔야 함** (현재 "Notalo").
+- `/contact` 전용 페이지(500단어, ContactPage 스키마), 모든 푸터에 About · Contact · Learn 링크, 내비에 Learn.
+- HTML 404 페이지(기존엔 JSON `{"detail":"Not Found"}` → 깨진 링크 클릭 시 빈 화면).
+- sitemap 59 URL. ads.txt·robots·noindex(/processing)·모바일·속도는 이미 OK.
+
+**사용자가 직접 할 것**
+1. `AUTHOR` 실명 + About "Who makes it"에 이름·경력 한 줄(피아노/개발 경력 등 사실만). 가능하면 LinkedIn/GitHub 링크.
+2. 재신청은 **10/24 이후**(2주), 그 사이 글 2~3편 더 추가(요청 시 작성).
+3. Search Console에서 /learn, /contact, 새 곡 URL 색인 요청. `site:notalo.xyz`로 색인 수 확인.
+4. AdSense → 개인정보 보호 및 메시지(EEA 동의 메시지) 켜기. 승인 조건은 아니지만 EU 트래픽에 필요.
+5. 봇 트래픽(미국·폴란드)이 대부분이면 심사에 불리 → GA에서 확인, 실제 사용자 유입(커뮤니티 공유 등) 쌓기.

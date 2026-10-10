@@ -13,7 +13,7 @@ import time
 
 from fastapi import FastAPI, Form, HTTPException, Request, UploadFile
 from PIL import Image
-from fastapi.responses import FileResponse, HTMLResponse, Response
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, Response
 from urllib.parse import quote
 from fastapi.staticfiles import StaticFiles
 from starlette.background import BackgroundTask
@@ -298,13 +298,14 @@ def page_midi():
     return HTMLResponse(_variant("/sheet-music-to-midi"))
 
 
-GUIDES = {"/how-to-read-sheet-music": "guide-read.html", "/treble-clef-notes": "guide-treble.html", "/bass-clef-notes": "guide-bass.html", "/about": "about.html"}
+GUIDES = {"/how-to-read-sheet-music": "guide-read.html", "/treble-clef-notes": "guide-treble.html", "/bass-clef-notes": "guide-bass.html", "/about": "about.html", "/contact": "contact.html"}
 
 
 @app.get("/how-to-read-sheet-music")
 @app.get("/treble-clef-notes")
 @app.get("/bass-clef-notes")
 @app.get("/about")
+@app.get("/contact")
 def guide_page(request: Request):
     return FileResponse(os.path.join(STATIC_DIR, GUIDES[request.url.path]))
 
@@ -381,6 +382,70 @@ def christmas_hub():
 @app.get("/processing")
 def processing_page():
     return FileResponse(os.path.join(STATIC_DIR, "processing.html"))
+
+
+# ---------- /learn: 글 (articles.py). 애드센스 E-E-A-T: 바이라인 + Person 스키마. AUTHOR는 실명·소개로 바꿀 것 (익명 "we"는 감점) ----------
+from articles import ARTICLES  # noqa: E402
+
+AUTHOR = {"name": "Notalo", "url": "https://notalo.xyz/about"}  # TODO 실명으로: {"name": "홍길동", "url": "https://notalo.xyz/about"}
+
+
+def _page(title, desc, url, body, ld, image="https://notalo.xyz/hero/sample_en.webp?v=1", status=200):
+    """song.html의 머리/꼬리를 빌려 임의 본문 페이지 생성 (허브·글·404 공용)."""
+    h = _SONG_TPL.split("<main class=\"article\">")[0] + '<main class="article">' + body + "</main>" + _SONG_TPL.split("</main>")[1]
+    h = re.sub(r"<title>.*?</title>", f"<title>{title} | Notalo</title>", h, count=1)
+    h = re.sub(r'(<meta name="description" content=")[^"]*(")', lambda mm: mm.group(1) + desc + mm.group(2), h)
+    h = re.sub(r'<meta property="og:[^>]*>', "", h)
+    h = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="{url}"><meta property="og:url" content="{url}"><meta property="og:title" content="{title}">'
+               f'<meta property="og:description" content="{desc}"><meta property="og:image" content="{image}">', h)
+    h = re.sub(r'<script type="application/ld\+json">.*?</script>', '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>", h, count=1)
+    return HTMLResponse(h, status_code=status)
+
+
+def _author_ld():
+    return {"@type": "Organization" if AUTHOR["name"] == "Notalo" else "Person", "name": AUTHOR["name"], "url": AUTHOR["url"]}
+
+
+@app.get("/learn")
+def learn_hub():
+    guides = [("/how-to-read-sheet-music", "How to read sheet music", "Staff, clefs, note names, rhythm, key signatures — every example labeled."),
+              ("/treble-clef-notes", "Treble clef notes", "Every note on the treble staff, labeled, with mnemonics and a drill."),
+              ("/bass-clef-notes", "Bass clef notes", "Every note on the bass staff, labeled, and the two-letters-lower trick.")]
+    lis = "".join(f'<li><a href="{u}"><strong>{t}</strong></a> — {d}</li>' for u, t, d in guides)
+    arts = "".join(f'<li><a href="/learn/{k}"><strong>{v["title"]}</strong></a> — {v["desc"]} <span class="toc" style="padding:0">({v["date"]})</span></li>'
+                   for k, v in sorted(ARTICLES.items(), key=lambda kv: kv[1]["date"], reverse=True))
+    body = ('<p class="toc"><a href="/">Notalo</a> › Learn</p><h1>Learn</h1>'
+            '<p class="lead">Guides and articles written from the work of building and running Notalo: how to read the staff, how music recognition works and where it fails, how to use letter notes without getting stuck on them, and how we decide what is free to publish.</p>'
+            f'<h2>Guides</h2><ul>{lis}</ul><h2>Articles</h2><ul>{arts}</ul>'
+            '<p>New articles are added every few weeks. Questions that would make a good one: <a href="/contact">tell us</a>.</p>'
+            '<div class="cta"><p><strong>Learn by playing.</strong> Every <a href="/letter-notes">demo song</a> has the letter under every note, so you read the staff while you play.</p><a class="btn-p" href="/letter-notes">Browse the songs</a></div>')
+    ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Learn — guides and articles", "url": "https://notalo.xyz/learn", "inLanguage": "en"}
+    return _page("Learn to read sheet music: guides and articles", "Guides on reading the staff and articles on music recognition, MIDI, letter notes, key signatures and public-domain music, from the people who make Notalo.", "https://notalo.xyz/learn", body, ld)
+
+
+@app.get("/learn/{slug}")
+def article_page(slug: str):
+    if slug not in ARTICLES:
+        raise HTTPException(404)
+    a, url = ARTICLES[slug], f"https://notalo.xyz/learn/{slug}"
+    body = (f'<p class="toc"><a href="/">Notalo</a> › <a href="/learn">Learn</a> › {a["title"]}</p><h1>{a["title"]}</h1>'
+            f'<p class="toc" style="padding:0">By <a href="{AUTHOR["url"]}">{AUTHOR["name"]}</a> · {a["date"]}</p>' + a["body"] +
+            '<div class="cta"><p><strong>Try it on your own music.</strong> Upload a photo or PDF of any piano sheet music and get it back with the letter under every note, chords and a MIDI file.</p><a class="btn-p" href="/#tool">Add letters to my sheet music</a></div>'
+            '<p>More: <a href="/learn">all guides and articles</a> · <a href="/letter-notes">demo songs with letters</a>.</p>')
+    ld = {"@context": "https://schema.org", "@type": "Article", "headline": a["title"], "description": a["desc"], "url": url, "inLanguage": "en",
+          "image": "https://notalo.xyz" + a["image"], "datePublished": a["date"], "dateModified": a["date"], "author": _author_ld(),
+          "publisher": {"@type": "Organization", "name": "Notalo", "url": "https://notalo.xyz/"}}
+    return _page(a["title"], a["desc"], url, body, ld, "https://notalo.xyz" + a["image"])
+
+
+@app.exception_handler(404)
+def not_found(request: Request, exc):
+    if request.url.path.startswith(("/jobs", "/preview", "/admin", "/auth")) or "text/html" not in request.headers.get("accept", ""):
+        return JSONResponse({"detail": "Not Found"}, status_code=404)
+    body = ('<p class="toc"><a href="/">Notalo</a> › Page not found</p><h1>That page is not here</h1>'
+            '<p class="lead">The address may have been mistyped, or the page may have moved. Nothing you converted is stored on this site, so a result link from an earlier session will not open again.</p>'
+            '<ul><li><a href="/">Add letters to your sheet music</a> — the converter</li><li><a href="/letter-notes">Demo songs with letters</a></li><li><a href="/learn">Learn: guides and articles</a></li><li><a href="/contact">Contact</a></li></ul>')
+    return _page("Page not found", "The page you asked for does not exist on Notalo.", "https://notalo.xyz/404", body, {"@context": "https://schema.org", "@type": "WebPage", "name": "Page not found"}, status=404)
 
 
 # ---------- 홈 ?lang=xx: hreflang이 가리키는 주소를 서버에서도 그 언어로 ----------
