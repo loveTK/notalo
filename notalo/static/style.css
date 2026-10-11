@@ -271,3 +271,5 @@ footer a:hover{color:var(--fg)}
 .fx .fade{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.25,.1,.25,1),transform .7s cubic-bezier(.25,.1,.25,1)}
 .fx .fade.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.fx .fade{opacity:1;transform:none;transition:none}}
+
+.article .author{display:flex;gap:18px;align-items:center;margin:8px 0 14px}.article .author img{width:96px;height:96px;margin:0;border-radius:50%;background:none;flex:none}.article .author p{margin:0;font-size:16px}

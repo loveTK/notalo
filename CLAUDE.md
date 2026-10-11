@@ -19,6 +19,7 @@
 | Gmail (xorud386@gmail.com) | 사용자 문의 메일 받는 곳. Terms/Privacy 페이지의 연락처로 씀. | 이메일 주소만 앎 |
 | PWA Builder (pwabuilder.com) | 웹사이트를 안드로이드 앱 파일(APK/AAB)로 바꿔주는 도구. Play Store에 올릴 파일 여기서 만듦. | 만들어준 파일(keystore, aab)만 받아서 씀 |
 | Google Play Console | 만든 안드로이드 앱을 스토어에 올리는 곳. 아직 사용자가 직접 등록 안 함(예정). | 존재만 앎, 계정 정보 모름 |
+| Instagram (@taco_taekyung) | 만든 사람(Taekyung Lee) 개인 계정. About 페이지·글 작성자 정보에 링크로 걸어 "실제 사람"임을 보여줌(애드센스 E-E-A-T). | 계정 주소만 앎(https://www.instagram.com/taco_taekyung/), 비번 모름 |
 | Zenodo / DeepScoresV2 | 계이름 붙이는 AI가 공부한 악보 데이터셋. 계정이 아니라 자료 출처(footer에 표기). | 링크만 앎 |
 
 - 표에 없는 서비스(도메인 구매처 등)는 내가 모름 — 알려주면 추가.

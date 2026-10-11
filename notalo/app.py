@@ -403,7 +403,7 @@ def _page(title, desc, url, body, ld, image="https://notalo.xyz/hero/sample_en.w
 
 
 def _author_ld():
-    return {"@type": "Organization" if AUTHOR["name"] == "Notalo" else "Person", "name": AUTHOR["name"], "url": AUTHOR["url"]}
+    return {"@type": "Person", "name": AUTHOR["name"], "url": AUTHOR["url"], "image": "https://notalo.xyz/taekyung.webp", "sameAs": ["https://www.instagram.com/taco_taekyung/"]}
 
 
 @app.get("/learn")
@@ -430,6 +430,7 @@ def article_page(slug: str):
     a, url = ARTICLES[slug], f"https://notalo.xyz/learn/{slug}"
     body = (f'<p class="toc"><a href="/">Notalo</a> › <a href="/learn">Learn</a> › {a["title"]}</p><h1>{a["title"]}</h1>'
             f'<p class="toc" style="padding:0">By <a href="{AUTHOR["url"]}">{AUTHOR["name"]}</a> · {a["date"]}</p>' + a["body"] +
+            f'<div class="author"><img src="/taekyung.webp" alt="{AUTHOR["name"]}" width="96" height="96"><p>Written by <strong>{AUTHOR["name"]}</strong>, a self-taught pianist (four years, no lessons) who built Notalo for personal practice. <a href="/about">About</a> · <a href="https://www.instagram.com/taco_taekyung/" rel="me noopener" target="_blank">Instagram</a></p></div>'
             '<div class="cta"><p><strong>Try it on your own music.</strong> Upload a photo or PDF of any piano sheet music and get it back with the letter under every note, chords and a MIDI file.</p><a class="btn-p" href="/#tool">Add letters to my sheet music</a></div>'
             '<p>More: <a href="/learn">all guides and articles</a> · <a href="/letter-notes">demo songs with letters</a>.</p>')
     ld = {"@context": "https://schema.org", "@type": "Article", "headline": a["title"], "description": a["desc"], "url": url, "inLanguage": "en",
