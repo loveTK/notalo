@@ -387,7 +387,7 @@ def processing_page():
 # ---------- /learn: 글 (articles.py). 애드센스 E-E-A-T: 바이라인 + Person 스키마. AUTHOR는 실명·소개로 바꿀 것 (익명 "we"는 감점) ----------
 from articles import ARTICLES  # noqa: E402
 
-AUTHOR = {"name": "Notalo", "url": "https://notalo.xyz/about"}  # TODO 실명으로: {"name": "홍길동", "url": "https://notalo.xyz/about"}
+AUTHOR = {"name": "Taekyung Lee", "url": "https://notalo.xyz/about"}
 
 
 def _page(title, desc, url, body, ld, image="https://notalo.xyz/hero/sample_en.webp?v=1", status=200):

@@ -313,7 +313,7 @@ Wheels on the Bus(Verna Hills 1939) · You Are My Sunshine(1939) · Heart and So
 - sitemap 59 URL. ads.txt·robots·noindex(/processing)·모바일·속도는 이미 OK.
 
 **사용자가 직접 할 것**
-1. `AUTHOR` 실명 + About "Who makes it"에 이름·경력 한 줄(피아노/개발 경력 등 사실만). 가능하면 LinkedIn/GitHub 링크.
+1. ~~실명~~ 완료(10/11): Taekyung Lee, 피아노 독학 4년, 본인이 쓰려고 만듦. 추가로 있으면 좋은 정보: 개발 경력, GitHub/LinkedIn 링크, 사진(선택), 사용 중인 악보 종류.
 2. 재신청은 **10/24 이후**(2주), 그 사이 글 2~3편 더 추가(요청 시 작성).
 3. Search Console에서 /learn, /contact, 새 곡 URL 색인 요청. `site:notalo.xyz`로 색인 수 확인.
 4. AdSense → 개인정보 보호 및 메시지(EEA 동의 메시지) 켜기. 승인 조건은 아니지만 EU 트래픽에 필요.
