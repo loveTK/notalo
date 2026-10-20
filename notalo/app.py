@@ -13,7 +13,7 @@ import time
 
 from fastapi import FastAPI, Form, HTTPException, Request, UploadFile
 from PIL import Image
-from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, RedirectResponse, Response
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, Response
 from urllib.parse import quote
 from fastapi.staticfiles import StaticFiles
 from starlette.background import BackgroundTask
@@ -492,14 +492,6 @@ def admin_stats(key: str, days: int = 7, exclude: str = ""):
 @app.get("/")
 def home(lang: str = ""):
     return HTMLResponse(_localized(lang if lang in _I18N else "en"))
-
-
-@app.middleware("http")
-async def www_redirect(request: Request, call_next):
-    """www.notalo.xyz → notalo.xyz 301. 두 호스트가 같은 내용을 내보내면 중복 사이트로 보임."""
-    if request.headers.get("host", "").startswith("www."):
-        return RedirectResponse("https://notalo.xyz" + request.url.path + (("?" + request.url.query) if request.url.query else ""), status_code=301)
-    return await call_next(request)
 
 
 @app.middleware("http")
