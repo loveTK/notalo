@@ -13,7 +13,7 @@ import time
 
 from fastapi import FastAPI, Form, HTTPException, Request, UploadFile
 from PIL import Image
-from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, Response
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, RedirectResponse, Response
 from urllib.parse import quote
 from fastapi.staticfiles import StaticFiles
 from starlette.background import BackgroundTask
@@ -446,7 +446,10 @@ def not_found(request: Request, exc):
     body = ('<p class="toc"><a href="/">Notalo</a> › Page not found</p><h1>That page is not here</h1>'
             '<p class="lead">The address may have been mistyped, or the page may have moved. Nothing you converted is stored on this site, so a result link from an earlier session will not open again.</p>'
             '<ul><li><a href="/">Add letters to your sheet music</a> — the converter</li><li><a href="/letter-notes">Demo songs with letters</a></li><li><a href="/learn">Learn: guides and articles</a></li><li><a href="/contact">Contact</a></li></ul>')
-    return _page("Page not found", "The page you asked for does not exist on Notalo.", "https://notalo.xyz/404", body, {"@context": "https://schema.org", "@type": "WebPage", "name": "Page not found"}, status=404)
+    r = _page("Page not found", "The page you asked for does not exist on Notalo.", "https://notalo.xyz/404", body, {"@context": "https://schema.org", "@type": "WebPage", "name": "Page not found"}, status=404)
+    # 애드센스 정책: 오류·로딩 화면엔 광고 금지 → 404엔 광고 스크립트 빼고 noindex
+    h = re.sub(r'<script async src="https://pagead2[^>]*></script>', '<meta name="robots" content="noindex">', r.body.decode())
+    return HTMLResponse(h, status_code=404)
 
 
 # ---------- 홈 ?lang=xx: hreflang이 가리키는 주소를 서버에서도 그 언어로 ----------
@@ -489,6 +492,14 @@ def admin_stats(key: str, days: int = 7, exclude: str = ""):
 @app.get("/")
 def home(lang: str = ""):
     return HTMLResponse(_localized(lang if lang in _I18N else "en"))
+
+
+@app.middleware("http")
+async def www_redirect(request: Request, call_next):
+    """www.notalo.xyz → notalo.xyz 301. 두 호스트가 같은 내용을 내보내면 중복 사이트로 보임."""
+    if request.headers.get("host", "").startswith("www."):
+        return RedirectResponse("https://notalo.xyz" + request.url.path + (("?" + request.url.query) if request.url.query else ""), status_code=301)
+    return await call_next(request)
 
 
 @app.middleware("http")
