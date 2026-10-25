@@ -269,4 +269,59 @@ ARTICLES = {
 <h2>The five chords that cover most songs</h2>
 <p>In any major key, three chords cover the majority of folk songs and carols: the ones built on the first, fourth and fifth notes of the scale. In C major that is C, F and G (or G7). In G major it is G, C and D. In F major, F, B♭ and C. Add the two minor chords built on the sixth and second notes (Am and Dm in C) and you can accompany nearly everything on this site. Look at the symbols on <a href="/letter-notes/jingle-bells">Jingle Bells</a>, <a href="/letter-notes/twelve-days-of-christmas">The Twelve Days of Christmas</a> and <a href="/letter-notes/amazing-grace">Amazing Grace</a> in turn, and you will see the same three-chord pattern in three different keys. Once you see it, you can play the left hand of a song you have never heard from its symbols alone, which is the point of the whole system.</p>
 """},
+ "piano-keyboard-notes-chart": {
+  "title": "Piano keyboard notes chart: every key named, and how to find middle C",
+  "desc": "A labeled chart of the piano keys from C3 to B5 with every white and black key named, octave numbers, and the two-and-three black-key pattern that lets you find any note in seconds on any piano or keyboard.",
+  "date": "2026-10-25", "image": "/guide/keyboard.png",
+  "body": """
+<p class="lead">A piano keyboard looks like 88 identical keys. It is really one pattern of twelve keys, seven white and five black, repeated from the bottom of the instrument to the top. Learn the pattern once and you can name any key on any piano, keyboard or app, without counting from the end.</p>
+
+<figure><img src="/guide/keyboard.png" alt="Piano keyboard chart from C3 to B5 with every white key labeled C D E F G A B with its octave number, every black key labeled with its sharp and flat name, and middle C (C4) highlighted" width="1152" height="440"><figcaption>Three octaves, C3 to B5. White keys in red, octave numbers below, sharp and flat names on the black keys. Middle C is highlighted.</figcaption></figure>
+
+<h2>The pattern: twos and threes</h2>
+<p>Look only at the black keys. They come in groups: two, then three, then two, then three, all the way along. That alternation is the whole map. Two landmarks are enough to read it:</p>
+<ul>
+  <li><strong>C</strong> is the white key just to the left of every group of <strong>two</strong> black keys.</li>
+  <li><strong>F</strong> is the white key just to the left of every group of <strong>three</strong> black keys.</li>
+</ul>
+<p>From C, the white keys go up through the alphabet: C, D, E, F, G, A, B, and then C again. Music uses only those seven letters. After G comes A, not H, which is the one place the alphabet trips people up. Between E and F, and between B and C, there is no black key, which is why the groups split where they do.</p>
+
+<h2>The black keys: sharps and flats</h2>
+<p>Every black key has two names. The black key just above C is <strong>C♯</strong> (C sharp), because it is one step higher than C. It is also <strong>D♭</strong> (D flat), because it is one step lower than D. Both names are correct; which one a piece of music uses depends on its key. A piece in G major writes F♯, never G♭, for the same key. The <a href="/learn/key-signatures-by-example">key signatures article</a> explains which name to expect when.</p>
+<p>The step from any key to the very next key, white or black, is a <strong>half step</strong> (or semitone). Two half steps make a <strong>whole step</strong>. C to D is a whole step with a black key in between; E to F is a half step with nothing in between. Every scale and chord is built from these two distances, so it is worth seeing them on the keyboard early.</p>
+
+<h2>Octave numbers, and which C is middle C</h2>
+<p>Because the letters repeat, musicians number each octave. The numbering changes at every C: the C and all the keys above it up to the next B share a number. <strong>Middle C is C4.</strong> The keys above it are D4, E4 and so on up to B4; the next C is C5. Going down from middle C, the B just below it is B3.</p>
+<p>On a full 88-key piano the lowest key is A0 and the highest is C8, and middle C is the fourth C from the left. On a 61-key keyboard, which usually runs from C2 to C7, middle C is the third C from the left. On smaller keyboards the safest rule is to find the C closest to the middle of the instrument; on most pianos it is right below the brand name.</p>
+<p>One warning that catches people moving between apps: some manufacturers and music programs call middle C <strong>C3</strong> instead of C4. The key is the same; only the label is shifted by one. If a MIDI file or app says a note is C5 and it sounds an octave lower than you expected, this is almost always the reason. Notalo and the charts on this site use the more common convention, middle C = C4, which is also MIDI note number 60.</p>
+
+<h2>How the keys line up with the staff</h2>
+<p>Middle C is the meeting point of the two staves in piano music. It sits on a short ledger line just <em>below</em> the treble staff and just <em>above</em> the bass staff, and both mean the same key. Everything on the treble staff is middle C and above, mostly played by the right hand; everything on the bass staff is middle C and below, mostly the left. The staff lines map onto the keys like this:</p>
+<table>
+  <tr><th>Staff</th><th>Bottom line</th><th>Middle line</th><th>Top line</th></tr>
+  <tr><td>Treble clef</td><td>E4</td><td>B4</td><td>F5</td></tr>
+  <tr><td>Bass clef</td><td>G2</td><td>D3</td><td>A3</td></tr>
+</table>
+<p>The full charts are in <a href="/treble-clef-notes">treble clef notes</a> and <a href="/bass-clef-notes">bass clef notes</a>. The two charts plus this one are all you need to go from a dot on the page to a key under your finger.</p>
+
+<h2>A ten-minute drill to learn the keys</h2>
+<ol>
+  <li><strong>All the Cs.</strong> Starting from the bottom, play every C on the keyboard, saying "C" each time. Then every F. These two are your anchors; everything else is a step or two from one of them.</li>
+  <li><strong>Up and down from C.</strong> Put your right thumb on middle C and play C D E F G with one finger per key, saying the names. This is the "C position" that the first songs on this site use.</li>
+  <li><strong>Random keys.</strong> Close your eyes, put a finger anywhere, open your eyes and name the key from the nearest group of black keys. Ten keys a day for a week is enough to make it automatic.</li>
+  <li><strong>Black keys both ways.</strong> Pick any black key and say both its names: "F sharp, G flat". It feels redundant until the first piece that uses flats.</li>
+</ol>
+<p>Then play something. <a href="/letter-notes/mary-had-a-little-lamb">Mary Had a Little Lamb</a> and <a href="/letter-notes/ode-to-joy">Ode to Joy</a> use only the five keys from C to G in the right hand, and every note on those pages has its letter written under it, so the chart above is all you need to play them.</p>
+
+<h2>Should you put stickers on the keys?</h2>
+<p>Note stickers are fine for the first week or two, while the twos-and-threes pattern is still new. Their cost is that your eyes learn to read the sticker instead of the shape of the keyboard, and the habit is hard to drop later. A gentler aid is a single sticker or a small piece of tape on middle C only: one fixed reference point, with every other key found from the pattern. Once you can find any C and F without looking for long, take the sticker off.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li><strong>Mixing up C and F.</strong> Both sit to the left of a black-key group. Look at the size of the group: two means C, three means F.</li>
+  <li><strong>Counting from the end of the keyboard.</strong> Slow and error-prone. Always find the nearest group of black keys instead.</li>
+  <li><strong>Looking for E♯ or B♯ on a black key.</strong> They exist as names (E♯ is the same key as F, B♯ the same as C), but there is no black key between E and F or B and C.</li>
+  <li><strong>Losing middle C on a small keyboard.</strong> Count Cs from the middle of the instrument, not from the left edge, or check the octave buttons: many keyboards shift every key by an octave when they are pressed.</li>
+</ul>
+"""},
 }

@@ -349,6 +349,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://notalo.xyz/learn/piano-keyboard-notes-chart</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://notalo.xyz/about</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>yearly</changefreq>
