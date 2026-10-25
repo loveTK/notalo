@@ -52,6 +52,11 @@ jobs:
           print("secrets set:", {k: bool(v) for k, v in env.items()})
           json.dump({"notune": {"image": os.environ["IMAGE"], "ports": {"8000": "HTTP"}, "environment": env}}, open("deploy.json", "w"))
           PY
+          # 직전 배포가 아직 진행 중이면 "deployment N is in progress"로 실패 → 끝날 때까지 대기(최대 10분)
+          for i in $(seq 60); do
+            s=$(aws lightsail get-container-services --service-name notune --query 'containerServices[0].state' --output text)
+            case "$s" in DEPLOYING|UPDATING|PENDING) echo "service $s, waiting"; sleep 10;; *) break;; esac
+          done
           aws lightsail create-container-service-deployment \
             --service-name notune \
             --containers file://deploy.json \
