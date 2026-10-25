@@ -319,9 +319,9 @@ Wheels on the Bus(Verna Hills 1939) · You Are My Sunshine(1939) · Heart and So
 4. AdSense → 개인정보 보호 및 메시지(EEA 동의 메시지) 켜기. 승인 조건은 아니지만 EU 트래픽에 필요.
 5. 봇 트래픽(미국·폴란드)이 대부분이면 심사에 불리 → GA에서 확인, 실제 사용자 유입(커뮤니티 공유 등) 쌓기.
 
-## 14. 주간 글 업로드 큐 (2026-10-25~)
+## 14. 글 업로드 큐 (2026-10-25~)
 
-매주 월요일 08:55(KST) 알림(Routine "Notalo weekly article"). 한 주에 1편, 몰아서 올리지 않기. 글은 `notalo/articles.py`, 그림은 직접 그린 것만(`notalo/static/guide/`).
+3일 간격 08:55(KST) 알림(Routine "Notalo article every 3 days", 매월 2·5·8…29일 → 월말은 3~4일 간격). 알림마다 후보 3개 추천. 글 쓰면 Routine 프롬프트의 "Already published" 목록도 갱신할 것(알림 세션은 저장소를 못 볼 수 있음). 글은 `notalo/articles.py`, 그림은 직접 그린 것만(`notalo/static/guide/`).
 
 | 주 | 주제 | 검색량(월) | 상태 |
 |---|---|---|---|
