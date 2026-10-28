@@ -324,4 +324,61 @@ ARTICLES = {
   <li><strong>Losing middle C on a small keyboard.</strong> Count Cs from the middle of the instrument, not from the left edge, or check the octave buttons: many keyboards shift every key by an octave when they are pressed.</li>
 </ul>
 """},
+
+ "piano-chords-for-beginners": {
+  "title": "Piano chords for beginners: C, F, G and A minor, and how to move between them",
+  "desc": "The four chords that accompany most simple songs, shown on the keyboard with finger numbers: how to build C, F, G and A minor, the inversions that let your hand barely move, and a ten-minute practice routine.",
+  "date": "2026-10-28", "image": "/guide/chords-cfgam.png",
+  "body": """
+<p class="lead">Four chords, C, F, G and A minor, are enough to accompany a large share of folk songs, carols and nursery tunes, and every one of them uses only white keys. This guide shows each chord on the keyboard with finger numbers, then the trick that turns four separate hand shapes into one small movement: inversions.</p>
+
+<h2>What a chord is</h2>
+<p>A chord is three or more notes played together. The beginner chords are <strong>triads</strong>: three notes, each one a white key skipped from the last. Put a finger on any white key, skip one, play the next, skip one, play the next. From C that gives C, E, G: the C major chord. From F it gives F, A, C. From G, G, B, D. From A, A, C, E. The lowest note, the one you started on, is the <strong>root</strong>, and it names the chord.</p>
+<p>Whether a triad is major or minor depends on the size of the first gap. Counting every key, white and black: a <strong>major</strong> chord is the root, four keys up, then three more. A <strong>minor</strong> chord is the root, three keys up, then four more. C to E is four keys (C♯, D, D♯, E), so C is major. A to C is three keys (A♯, B, C), so A minor is minor. You can hear the difference at once: major sounds bright and settled, minor sounds softer and sadder. The <a href="/learn/piano-keyboard-notes-chart">keyboard notes chart</a> has every key labeled if you want to count along.</p>
+
+<figure><img src="/guide/chords-cfgam.png" alt="Keyboard diagrams of the C major, F major, G major and A minor chords, each with the three keys highlighted and right-hand finger numbers 1, 3 and 5" width="880" height="560"><figcaption>The four chords in root position. Blue circles are right-hand finger numbers: 1 is the thumb, 5 the little finger.</figcaption></figure>
+
+<h2>Finger numbers</h2>
+<p>Pianists number the fingers of each hand from the thumb: thumb 1, index 2, middle 3, ring 4, little finger 5. A root-position triad in the <strong>right hand</strong> is played 1-3-5, thumb on the root. In the <strong>left hand</strong> it is the mirror image, 5-3-1: little finger on the root, thumb on the top note. Curve the fingers slightly as if holding a ball, and let the weight of the hand press the keys rather than pushing with the fingers. All three notes should sound at exactly the same moment and at the same volume; if one sticks out, play the chord slowly a few times listening only for that.</p>
+
+<h2>The four chords</h2>
+<table>
+  <tr><th>Chord</th><th>Notes</th><th>Type</th><th>Where to find it</th></tr>
+  <tr><td>C</td><td>C E G</td><td>major</td><td>Root just left of a pair of black keys</td></tr>
+  <tr><td>F</td><td>F A C</td><td>major</td><td>Root just left of a group of three black keys</td></tr>
+  <tr><td>G</td><td>G B D</td><td>major</td><td>Root between the first and second keys of the group of three</td></tr>
+  <tr><td>Am</td><td>A C E</td><td>minor</td><td>Root between the second and third keys of the group of three</td></tr>
+</table>
+<p>In the key of C these are the chords built on the first, fourth, fifth and sixth notes of the scale, which is why they fit together: between them they contain every note of the C major scale. A melody in C almost always lands on a note that belongs to one of them.</p>
+
+<h2>Inversions: the trick that makes chords easy</h2>
+<p>Play C, then jump your hand up to F, then to G, in root position. It works, but the whole hand leaps every time, and at any real speed the chords start late. The solution is to play the same three notes in a different order. A chord with its root at the bottom is in <strong>root position</strong>; move the root to the top and it is an <strong>inversion</strong>. The chord is still F if it contains F, A and C, whatever order they are in.</p>
+<figure><img src="/guide/chords-inversions.png" alt="Keyboard diagrams of C (C E G), F as C F A, G as B D G and A minor as C E A, showing that the hand stays in nearly the same place" width="880" height="560"><figcaption>The same four chords as inversions, all within reach of middle C. Compare the highlighted keys with the first chart: the hand barely moves.</figcaption></figure>
+<ul>
+  <li><strong>C to F (as C F A):</strong> the thumb stays on C. The other two fingers each move up one key, E to F and G to A.</li>
+  <li><strong>C to G (as B D G):</strong> the little finger stays on G. The thumb moves down from C to B, the middle note from E to D.</li>
+  <li><strong>C to A minor (as C E A):</strong> C and E stay. Only the top note moves, G up to A.</li>
+</ul>
+<p>Written above the music these inversions are sometimes shown with a slash: <strong>F/C</strong> means an F chord with C at the bottom, <strong>G/B</strong> a G chord with B at the bottom. You do not need the slash to use them; any time the chord symbol changes, look for the version of the new chord that shares notes with the one under your hand.</p>
+
+<h2>A ten-minute routine</h2>
+<ol>
+  <li><strong>Shapes, two minutes.</strong> Right hand, root position: C, F, G, Am, each played four times. Say the chord name as you play it. Then the same in the left hand an octave lower, fingers 5-3-1.</li>
+  <li><strong>Moves, three minutes.</strong> Right hand, inversions, four beats each: C (C E G), F (C F A), C, G (B D G), C. Keep your eyes off your hand and feel which fingers move. Then C, Am (C E A), F (C F A), G (B D G), and back to C: one of the most common four-chord loops in popular music.</li>
+  <li><strong>With a melody, five minutes.</strong> Play a tune in the right hand and hold one chord per bar in the left. Our arrangement of <a href="/letter-notes/twinkle-twinkle-little-star">Twinkle Twinkle Little Star</a> uses exactly C, F and G in the left hand; <a href="/letter-notes/ode-to-joy">Ode to Joy</a> and <a href="/letter-notes/london-bridge">London Bridge</a> use only C and G. The chord name is printed above every bar, and the left-hand letters are written under the notes.</li>
+</ol>
+<p>When holding chords feels easy, turn them into a pattern: root on beat one, the other two notes on beats two and three, or the three notes one after another. The <a href="/learn/chord-symbols-for-beginners">chord symbols article</a> describes both patterns and explains what symbols like G7 and Cmaj7 add.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+  <li><strong>Using fingers 1-2-3.</strong> The three keys of a triad are spread out; 1-2-3 squeezes the hand and makes the top note weak. Use 1-3-5 (right) or 5-3-1 (left).</li>
+  <li><strong>Pressing with flat fingers.</strong> Flat fingers catch the neighbouring keys. Keep a gentle curve and play on the fingertips.</li>
+  <li><strong>Mixing up F and G.</strong> Both sit in the group of three black keys. F is to the left of the group; G is inside it, after the first black key.</li>
+  <li><strong>Jumping in root position.</strong> If a change is always late, you are probably leaping. Use the inversion that keeps a shared note under the same finger.</li>
+  <li><strong>Holding the chord too hard.</strong> The keys only need to go down. Pressing harder after that makes no sound and tires the hand in a minute.</li>
+</ul>
+
+<h2>Where to go next</h2>
+<p>With C, F, G and A minor in your hands you can accompany most of the <a href="/letter-notes">demo songs</a> in C major on this site, and transpose the same idea to other keys: in G major the four chords are G, C, D and E minor; in F major they are F, B♭, C and D minor. The shapes are the same three-finger triads; only the starting keys move. Add G7 (G, B, D and F) when a song sounds like it needs a stronger pull back to C, and you have the chords for the great majority of simple tunes.</p>
+"""},
 }
